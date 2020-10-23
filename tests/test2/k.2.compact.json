@@ -1,0 +1,1778 @@
+{
+  "_declaration": {
+    "_attributes": {
+      "version": "1.0",
+      "encoding": "utf-8"
+    }
+  },
+  "mlt": {
+    "_attributes": {
+      "LC_NUMERIC": "es_MX",
+      "producer": "main_bin",
+      "version": "6.23.0",
+      "root": "C:/ARREOLA/Projects/KdenliveAPI/tests/test2"
+    },
+    "profile": {
+      "_attributes": {
+        "frame_rate_num": "30",
+        "sample_aspect_num": "1",
+        "display_aspect_den": "768",
+        "colorspace": "709",
+        "progressive": "1",
+        "description": "1368x768 30.00fps",
+        "display_aspect_num": "1364",
+        "frame_rate_den": "1",
+        "width": "1368",
+        "height": "768",
+        "sample_aspect_den": "1"
+      }
+    },
+    "producer": [
+      {
+        "_attributes": {
+          "id": "producer0",
+          "in": "00:00:00.000",
+          "out": "00:13:03.000"
+        },
+        "property": [
+          {
+            "_attributes": {
+              "name": "length"
+            },
+            "_text": "23491"
+          },
+          {
+            "_attributes": {
+              "name": "eof"
+            },
+            "_text": "pause"
+          },
+          {
+            "_attributes": {
+              "name": "resource"
+            },
+            "_text": "C:/Users/Jorge Arreola/Videos/videooooooo.mkv"
+          },
+          {
+            "_attributes": {
+              "name": "audio_index"
+            },
+            "_text": "1"
+          },
+          {
+            "_attributes": {
+              "name": "video_index"
+            },
+            "_text": "0"
+          },
+          {
+            "_attributes": {
+              "name": "mute_on_pause"
+            },
+            "_text": "0"
+          },
+          {
+            "_attributes": {
+              "name": "mlt_service"
+            },
+            "_text": "avformat-novalidate"
+          },
+          {
+            "_attributes": {
+              "name": "seekable"
+            },
+            "_text": "1"
+          },
+          {
+            "_attributes": {
+              "name": "aspect_ratio"
+            },
+            "_text": "1"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:clipname"
+            },
+            "_text": "XD"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:folderid"
+            },
+            "_text": "-1"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:id"
+            },
+            "_text": "3"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:file_size"
+            },
+            "_text": "27493394"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:file_hash"
+            },
+            "_text": "9edd077085e6d86321b537f57119057c"
+          },
+          {
+            "_attributes": {
+              "name": "global_feed"
+            },
+            "_text": "1"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.nb_streams"
+            },
+            "_text": "2"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.0.stream.type"
+            },
+            "_text": "video"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.0.stream.frame_rate"
+            },
+            "_text": "30"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.0.stream.sample_aspect_ratio"
+            },
+            "_text": "0"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.0.codec.width"
+            },
+            "_text": "1364"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.0.codec.height"
+            },
+            "_text": "768"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.0.codec.rotate"
+            },
+            "_text": "0"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.0.codec.frame_rate"
+            },
+            "_text": "30"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.0.codec.pix_fmt"
+            },
+            "_text": "yuv420p"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.0.codec.sample_aspect_ratio"
+            },
+            "_text": "0"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.0.codec.colorspace"
+            },
+            "_text": "709"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.0.codec.name"
+            },
+            "_text": "h264"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.0.codec.long_name"
+            },
+            "_text": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.0.codec.bit_rate"
+            },
+            "_text": "0"
+          },
+          {
+            "_attributes": {
+              "name": "meta.attr.0.stream.DURATION.markup"
+            },
+            "_text": "00:13:03.033000000"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.1.stream.type"
+            },
+            "_text": "audio"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.1.codec.sample_fmt"
+            },
+            "_text": "fltp"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.1.codec.sample_rate"
+            },
+            "_text": "44100"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.1.codec.channels"
+            },
+            "_text": "2"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.1.codec.name"
+            },
+            "_text": "aac"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.1.codec.long_name"
+            },
+            "_text": "AAC (Advanced Audio Coding)"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.1.codec.bit_rate"
+            },
+            "_text": "0"
+          },
+          {
+            "_attributes": {
+              "name": "meta.attr.1.stream.title.markup"
+            },
+            "_text": "simple_aac_recording"
+          },
+          {
+            "_attributes": {
+              "name": "meta.attr.1.stream.DURATION.markup"
+            },
+            "_text": "00:13:02.954000000"
+          },
+          {
+            "_attributes": {
+              "name": "meta.attr.ENCODER.markup"
+            },
+            "_text": "Lavf58.29.100"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.sample_aspect_num"
+            },
+            "_text": "1"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.sample_aspect_den"
+            },
+            "_text": "1"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.frame_rate_num"
+            },
+            "_text": "30"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.frame_rate_den"
+            },
+            "_text": "1"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.colorspace"
+            },
+            "_text": "709"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.color_trc"
+            },
+            "_text": "2"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.width"
+            },
+            "_text": "1364"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.height"
+            },
+            "_text": "768"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.color_range"
+            },
+            "_text": "mpeg"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.top_field_first"
+            },
+            "_text": "0"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.progressive"
+            },
+            "_text": "1"
+          }
+        ]
+      },
+      {
+        "_attributes": {
+          "id": "black_track",
+          "in": "00:00:00.000",
+          "out": "00:29:43.033"
+        },
+        "property": [
+          {
+            "_attributes": {
+              "name": "length"
+            },
+            "_text": "2147483647"
+          },
+          {
+            "_attributes": {
+              "name": "eof"
+            },
+            "_text": "continue"
+          },
+          {
+            "_attributes": {
+              "name": "resource"
+            },
+            "_text": "black"
+          },
+          {
+            "_attributes": {
+              "name": "aspect_ratio"
+            },
+            "_text": "1"
+          },
+          {
+            "_attributes": {
+              "name": "mlt_service"
+            },
+            "_text": "color"
+          },
+          {
+            "_attributes": {
+              "name": "mlt_image_format"
+            },
+            "_text": "rgb24a"
+          },
+          {
+            "_attributes": {
+              "name": "set.test_audio"
+            },
+            "_text": "0"
+          }
+        ]
+      },
+      {
+        "_attributes": {
+          "id": "producer1",
+          "in": "00:00:00.000",
+          "out": "00:13:03.000"
+        },
+        "property": [
+          {
+            "_attributes": {
+              "name": "length"
+            },
+            "_text": "23491"
+          },
+          {
+            "_attributes": {
+              "name": "eof"
+            },
+            "_text": "pause"
+          },
+          {
+            "_attributes": {
+              "name": "resource"
+            },
+            "_text": "C:/Users/Jorge Arreola/Videos/videooooooo.mkv"
+          },
+          {
+            "_attributes": {
+              "name": "audio_index"
+            },
+            "_text": "1"
+          },
+          {
+            "_attributes": {
+              "name": "video_index"
+            },
+            "_text": "0"
+          },
+          {
+            "_attributes": {
+              "name": "mute_on_pause"
+            },
+            "_text": "0"
+          },
+          {
+            "_attributes": {
+              "name": "mlt_service"
+            },
+            "_text": "avformat-novalidate"
+          },
+          {
+            "_attributes": {
+              "name": "seekable"
+            },
+            "_text": "1"
+          },
+          {
+            "_attributes": {
+              "name": "aspect_ratio"
+            },
+            "_text": "1"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:clipname"
+            }
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:folderid"
+            },
+            "_text": "-1"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:id"
+            },
+            "_text": "3"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:file_size"
+            },
+            "_text": "27493394"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:file_hash"
+            },
+            "_text": "9edd077085e6d86321b537f57119057c"
+          },
+          {
+            "_attributes": {
+              "name": "global_feed"
+            },
+            "_text": "1"
+          },
+          {
+            "_attributes": {
+              "name": "xml"
+            },
+            "_text": "was here"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.nb_streams"
+            },
+            "_text": "2"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.0.stream.type"
+            },
+            "_text": "video"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.0.stream.frame_rate"
+            },
+            "_text": "30"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.0.stream.sample_aspect_ratio"
+            },
+            "_text": "0"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.0.codec.width"
+            },
+            "_text": "1364"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.0.codec.height"
+            },
+            "_text": "768"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.0.codec.rotate"
+            },
+            "_text": "0"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.0.codec.frame_rate"
+            },
+            "_text": "30"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.0.codec.pix_fmt"
+            },
+            "_text": "yuv420p"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.0.codec.sample_aspect_ratio"
+            },
+            "_text": "0"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.0.codec.colorspace"
+            },
+            "_text": "709"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.0.codec.name"
+            },
+            "_text": "h264"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.0.codec.long_name"
+            },
+            "_text": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.0.codec.bit_rate"
+            },
+            "_text": "0"
+          },
+          {
+            "_attributes": {
+              "name": "meta.attr.0.stream.DURATION.markup"
+            },
+            "_text": "00:13:03.033000000"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.1.stream.type"
+            },
+            "_text": "audio"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.1.codec.sample_fmt"
+            },
+            "_text": "fltp"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.1.codec.sample_rate"
+            },
+            "_text": "44100"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.1.codec.channels"
+            },
+            "_text": "2"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.1.codec.name"
+            },
+            "_text": "aac"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.1.codec.long_name"
+            },
+            "_text": "AAC (Advanced Audio Coding)"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.1.codec.bit_rate"
+            },
+            "_text": "0"
+          },
+          {
+            "_attributes": {
+              "name": "meta.attr.1.stream.title.markup"
+            },
+            "_text": "simple_aac_recording"
+          },
+          {
+            "_attributes": {
+              "name": "meta.attr.1.stream.DURATION.markup"
+            },
+            "_text": "00:13:02.954000000"
+          },
+          {
+            "_attributes": {
+              "name": "meta.attr.ENCODER.markup"
+            },
+            "_text": "Lavf58.29.100"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.sample_aspect_num"
+            },
+            "_text": "1"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.sample_aspect_den"
+            },
+            "_text": "1"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.frame_rate_num"
+            },
+            "_text": "30"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.frame_rate_den"
+            },
+            "_text": "1"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.colorspace"
+            },
+            "_text": "709"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.color_trc"
+            },
+            "_text": "2"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.width"
+            },
+            "_text": "1364"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.height"
+            },
+            "_text": "768"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.color_range"
+            },
+            "_text": "mpeg"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.top_field_first"
+            },
+            "_text": "0"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.progressive"
+            },
+            "_text": "1"
+          },
+          {
+            "_attributes": {
+              "name": "set.test_audio"
+            },
+            "_text": "0"
+          },
+          {
+            "_attributes": {
+              "name": "set.test_image"
+            },
+            "_text": "1"
+          }
+        ]
+      },
+      {
+        "_attributes": {
+          "id": "producer2",
+          "in": "00:00:00.000",
+          "out": "00:13:03.000"
+        },
+        "property": [
+          {
+            "_attributes": {
+              "name": "length"
+            },
+            "_text": "23491"
+          },
+          {
+            "_attributes": {
+              "name": "eof"
+            },
+            "_text": "pause"
+          },
+          {
+            "_attributes": {
+              "name": "resource"
+            },
+            "_text": "C:/Users/Jorge Arreola/Videos/videooooooo.mkv"
+          },
+          {
+            "_attributes": {
+              "name": "audio_index"
+            },
+            "_text": "1"
+          },
+          {
+            "_attributes": {
+              "name": "video_index"
+            },
+            "_text": "0"
+          },
+          {
+            "_attributes": {
+              "name": "mute_on_pause"
+            },
+            "_text": "0"
+          },
+          {
+            "_attributes": {
+              "name": "mlt_service"
+            },
+            "_text": "avformat-novalidate"
+          },
+          {
+            "_attributes": {
+              "name": "seekable"
+            },
+            "_text": "1"
+          },
+          {
+            "_attributes": {
+              "name": "aspect_ratio"
+            },
+            "_text": "1"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:clipname"
+            }
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:folderid"
+            },
+            "_text": "-1"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:id"
+            },
+            "_text": "3"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:file_size"
+            },
+            "_text": "27493394"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:file_hash"
+            },
+            "_text": "9edd077085e6d86321b537f57119057c"
+          },
+          {
+            "_attributes": {
+              "name": "global_feed"
+            },
+            "_text": "1"
+          },
+          {
+            "_attributes": {
+              "name": "xml"
+            },
+            "_text": "was here"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.nb_streams"
+            },
+            "_text": "2"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.0.stream.type"
+            },
+            "_text": "video"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.0.stream.frame_rate"
+            },
+            "_text": "30"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.0.stream.sample_aspect_ratio"
+            },
+            "_text": "0"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.0.codec.width"
+            },
+            "_text": "1364"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.0.codec.height"
+            },
+            "_text": "768"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.0.codec.rotate"
+            },
+            "_text": "0"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.0.codec.frame_rate"
+            },
+            "_text": "30"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.0.codec.pix_fmt"
+            },
+            "_text": "yuv420p"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.0.codec.sample_aspect_ratio"
+            },
+            "_text": "0"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.0.codec.colorspace"
+            },
+            "_text": "709"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.0.codec.name"
+            },
+            "_text": "h264"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.0.codec.long_name"
+            },
+            "_text": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.0.codec.bit_rate"
+            },
+            "_text": "0"
+          },
+          {
+            "_attributes": {
+              "name": "meta.attr.0.stream.DURATION.markup"
+            },
+            "_text": "00:13:03.033000000"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.1.stream.type"
+            },
+            "_text": "audio"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.1.codec.sample_fmt"
+            },
+            "_text": "fltp"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.1.codec.sample_rate"
+            },
+            "_text": "44100"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.1.codec.channels"
+            },
+            "_text": "2"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.1.codec.name"
+            },
+            "_text": "aac"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.1.codec.long_name"
+            },
+            "_text": "AAC (Advanced Audio Coding)"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.1.codec.bit_rate"
+            },
+            "_text": "0"
+          },
+          {
+            "_attributes": {
+              "name": "meta.attr.1.stream.title.markup"
+            },
+            "_text": "simple_aac_recording"
+          },
+          {
+            "_attributes": {
+              "name": "meta.attr.1.stream.DURATION.markup"
+            },
+            "_text": "00:13:02.954000000"
+          },
+          {
+            "_attributes": {
+              "name": "meta.attr.ENCODER.markup"
+            },
+            "_text": "Lavf58.29.100"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.sample_aspect_num"
+            },
+            "_text": "1"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.sample_aspect_den"
+            },
+            "_text": "1"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.frame_rate_num"
+            },
+            "_text": "30"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.frame_rate_den"
+            },
+            "_text": "1"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.colorspace"
+            },
+            "_text": "709"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.color_trc"
+            },
+            "_text": "2"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.width"
+            },
+            "_text": "1364"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.height"
+            },
+            "_text": "768"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.color_range"
+            },
+            "_text": "mpeg"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.top_field_first"
+            },
+            "_text": "0"
+          },
+          {
+            "_attributes": {
+              "name": "meta.media.progressive"
+            },
+            "_text": "1"
+          },
+          {
+            "_attributes": {
+              "name": "set.test_audio"
+            },
+            "_text": "1"
+          },
+          {
+            "_attributes": {
+              "name": "set.test_image"
+            },
+            "_text": "0"
+          }
+        ]
+      }
+    ],
+    "playlist": [
+      {
+        "_attributes": {
+          "id": "main_bin"
+        },
+        "property": [
+          {
+            "_attributes": {
+              "name": "kdenlive:docproperties.activeTrack"
+            },
+            "_text": "0"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:docproperties.audioChannels"
+            },
+            "_text": "2"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:docproperties.audioTarget"
+            },
+            "_text": "-1"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:docproperties.disablepreview"
+            },
+            "_text": "0"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:docproperties.documentid"
+            },
+            "_text": "1603402929383"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:docproperties.enableTimelineZone"
+            },
+            "_text": "0"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:docproperties.enableexternalproxy"
+            },
+            "_text": "0"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:docproperties.enableproxy"
+            },
+            "_text": "0"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:docproperties.externalproxyparams"
+            },
+            "_text": "../Sub;;S03.MP4;../Clip;;.MXF"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:docproperties.generateimageproxy"
+            },
+            "_text": "0"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:docproperties.generateproxy"
+            },
+            "_text": "0"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:docproperties.groups"
+            },
+            "_text": "[\r\n    {\r\n        \"children\": [\r\n            {\r\n                \"data\": \"1:0\",\r\n                \"leaf\": \"clip\",\r\n                \"type\": \"Leaf\"\r\n            },\r\n            {\r\n                \"data\": \"0:0\",\r\n                \"leaf\": \"clip\",\r\n                \"type\": \"Leaf\"\r\n            }\r\n        ],\r\n        \"type\": \"AVSplit\"\r\n    }\r\n]\r\n"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:docproperties.kdenliveversion"
+            },
+            "_text": "20.08.0"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:docproperties.position"
+            },
+            "_text": "481"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:docproperties.previewextension"
+            }
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:docproperties.previewparameters"
+            }
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:docproperties.profile"
+            },
+            "_text": "C:/Users/Jorge Arreola/AppData/Roaming/kdenlive/profiles/customprofile0"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:docproperties.proxyextension"
+            }
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:docproperties.proxyimageminsize"
+            },
+            "_text": "2000"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:docproperties.proxyimagesize"
+            },
+            "_text": "800"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:docproperties.proxyminsize"
+            },
+            "_text": "1000"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:docproperties.proxyparams"
+            }
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:docproperties.scrollPos"
+            },
+            "_text": "0"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:docproperties.seekOffset"
+            },
+            "_text": "30000"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:docproperties.version"
+            },
+            "_text": "1"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:docproperties.verticalzoom"
+            },
+            "_text": "1"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:docproperties.videoTarget"
+            },
+            "_text": "-1"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:docproperties.zonein"
+            },
+            "_text": "0"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:docproperties.zoneout"
+            },
+            "_text": "75"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:docproperties.zoom"
+            },
+            "_text": "16"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:expandedFolders"
+            }
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:documentnotes"
+            }
+          },
+          {
+            "_attributes": {
+              "name": "xml_retain"
+            },
+            "_text": "1"
+          }
+        ],
+        "entry": {
+          "_attributes": {
+            "producer": "producer0",
+            "in": "00:00:00.000",
+            "out": "00:13:03.000"
+          }
+        }
+      },
+      {
+        "_attributes": {
+          "id": "playlist0"
+        },
+        "property": {
+          "_attributes": {
+            "name": "kdenlive:audio_track"
+          },
+          "_text": "1"
+        },
+        "entry": {
+          "_attributes": {
+            "producer": "producer1",
+            "in": "00:00:00.000",
+            "out": "00:13:03.000"
+          },
+          "property": {
+            "_attributes": {
+              "name": "kdenlive:id"
+            },
+            "_text": "3"
+          }
+        },
+        "filter": [
+          {
+            "_attributes": {
+              "id": "filter0"
+            },
+            "property": [
+              {
+                "_attributes": {
+                  "name": "window"
+                },
+                "_text": "75"
+              },
+              {
+                "_attributes": {
+                  "name": "max_gain"
+                },
+                "_text": "20dB"
+              },
+              {
+                "_attributes": {
+                  "name": "mlt_service"
+                },
+                "_text": "volume"
+              },
+              {
+                "_attributes": {
+                  "name": "internal_added"
+                },
+                "_text": "237"
+              },
+              {
+                "_attributes": {
+                  "name": "disable"
+                },
+                "_text": "1"
+              }
+            ]
+          },
+          {
+            "_attributes": {
+              "id": "filter1"
+            },
+            "property": [
+              {
+                "_attributes": {
+                  "name": "channel"
+                },
+                "_text": "-1"
+              },
+              {
+                "_attributes": {
+                  "name": "mlt_service"
+                },
+                "_text": "panner"
+              },
+              {
+                "_attributes": {
+                  "name": "internal_added"
+                },
+                "_text": "237"
+              },
+              {
+                "_attributes": {
+                  "name": "start"
+                },
+                "_text": "0.5"
+              },
+              {
+                "_attributes": {
+                  "name": "disable"
+                },
+                "_text": "1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "_attributes": {
+          "id": "playlist1"
+        }
+      },
+      {
+        "_attributes": {
+          "id": "playlist2"
+        },
+        "entry": {
+          "_attributes": {
+            "producer": "producer2",
+            "in": "00:00:00.000",
+            "out": "00:13:03.000"
+          },
+          "property": {
+            "_attributes": {
+              "name": "kdenlive:id"
+            },
+            "_text": "3"
+          }
+        }
+      },
+      {
+        "_attributes": {
+          "id": "playlist3"
+        }
+      }
+    ],
+    "tractor": [
+      {
+        "_attributes": {
+          "id": "tractor0",
+          "in": "00:00:00.000",
+          "out": "00:13:03.000"
+        },
+        "property": [
+          {
+            "_attributes": {
+              "name": "kdenlive:audio_track"
+            },
+            "_text": "1"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:trackheight"
+            },
+            "_text": "67"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:collapsed"
+            },
+            "_text": "28"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:thumbs_format"
+            }
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:audio_rec"
+            }
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:timeline_active"
+            },
+            "_text": "1"
+          }
+        ],
+        "track": [
+          {
+            "_attributes": {
+              "hide": "video",
+              "producer": "playlist0"
+            }
+          },
+          {
+            "_attributes": {
+              "hide": "both",
+              "producer": "playlist1"
+            }
+          }
+        ],
+        "filter": {
+          "_attributes": {
+            "id": "filter2"
+          },
+          "property": [
+            {
+              "_attributes": {
+                "name": "iec_scale"
+              },
+              "_text": "0"
+            },
+            {
+              "_attributes": {
+                "name": "mlt_service"
+              },
+              "_text": "audiolevel"
+            },
+            {
+              "_attributes": {
+                "name": "disable"
+              },
+              "_text": "1"
+            }
+          ]
+        }
+      },
+      {
+        "_attributes": {
+          "id": "tractor1",
+          "in": "00:00:00.000",
+          "out": "00:13:03.000"
+        },
+        "property": [
+          {
+            "_attributes": {
+              "name": "kdenlive:trackheight"
+            },
+            "_text": "67"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:collapsed"
+            },
+            "_text": "28"
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:thumbs_format"
+            }
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:audio_rec"
+            }
+          },
+          {
+            "_attributes": {
+              "name": "kdenlive:timeline_active"
+            },
+            "_text": "1"
+          }
+        ],
+        "track": [
+          {
+            "_attributes": {
+              "hide": "audio",
+              "producer": "playlist2"
+            }
+          },
+          {
+            "_attributes": {
+              "hide": "both",
+              "producer": "playlist3"
+            }
+          }
+        ]
+      },
+      {
+        "_attributes": {
+          "id": "tractor2",
+          "global_feed": "1",
+          "in": "00:00:00.000",
+          "out": "00:29:43.033"
+        },
+        "track": [
+          {
+            "_attributes": {
+              "producer": "black_track"
+            }
+          },
+          {
+            "_attributes": {
+              "producer": "tractor0"
+            }
+          },
+          {
+            "_attributes": {
+              "producer": "tractor1"
+            }
+          }
+        ],
+        "transition": [
+          {
+            "_attributes": {
+              "id": "transition0"
+            },
+            "property": [
+              {
+                "_attributes": {
+                  "name": "a_track"
+                },
+                "_text": "0"
+              },
+              {
+                "_attributes": {
+                  "name": "b_track"
+                },
+                "_text": "1"
+              },
+              {
+                "_attributes": {
+                  "name": "mlt_service"
+                },
+                "_text": "mix"
+              },
+              {
+                "_attributes": {
+                  "name": "kdenlive_id"
+                },
+                "_text": "mix"
+              },
+              {
+                "_attributes": {
+                  "name": "internal_added"
+                },
+                "_text": "237"
+              },
+              {
+                "_attributes": {
+                  "name": "always_active"
+                },
+                "_text": "1"
+              },
+              {
+                "_attributes": {
+                  "name": "sum"
+                },
+                "_text": "1"
+              }
+            ]
+          },
+          {
+            "_attributes": {
+              "id": "transition1"
+            },
+            "property": [
+              {
+                "_attributes": {
+                  "name": "a_track"
+                },
+                "_text": "0"
+              },
+              {
+                "_attributes": {
+                  "name": "b_track"
+                },
+                "_text": "2"
+              },
+              {
+                "_attributes": {
+                  "name": "compositing"
+                },
+                "_text": "0"
+              },
+              {
+                "_attributes": {
+                  "name": "distort"
+                },
+                "_text": "0"
+              },
+              {
+                "_attributes": {
+                  "name": "rotate_center"
+                },
+                "_text": "0"
+              },
+              {
+                "_attributes": {
+                  "name": "mlt_service"
+                },
+                "_text": "qtblend"
+              },
+              {
+                "_attributes": {
+                  "name": "kdenlive_id"
+                },
+                "_text": "qtblend"
+              },
+              {
+                "_attributes": {
+                  "name": "internal_added"
+                },
+                "_text": "237"
+              },
+              {
+                "_attributes": {
+                  "name": "always_active"
+                },
+                "_text": "1"
+              }
+            ]
+          }
+        ],
+        "filter": [
+          {
+            "_attributes": {
+              "id": "filter3"
+            },
+            "property": [
+              {
+                "_attributes": {
+                  "name": "window"
+                },
+                "_text": "75"
+              },
+              {
+                "_attributes": {
+                  "name": "max_gain"
+                },
+                "_text": "20dB"
+              },
+              {
+                "_attributes": {
+                  "name": "level"
+                },
+                "_text": "5.02471"
+              },
+              {
+                "_attributes": {
+                  "name": "mlt_service"
+                },
+                "_text": "volume"
+              },
+              {
+                "_attributes": {
+                  "name": "internal_added"
+                },
+                "_text": "237"
+              },
+              {
+                "_attributes": {
+                  "name": "disable"
+                },
+                "_text": "0"
+              }
+            ]
+          },
+          {
+            "_attributes": {
+              "id": "filter4"
+            },
+            "property": [
+              {
+                "_attributes": {
+                  "name": "channel"
+                },
+                "_text": "-1"
+              },
+              {
+                "_attributes": {
+                  "name": "mlt_service"
+                },
+                "_text": "panner"
+              },
+              {
+                "_attributes": {
+                  "name": "internal_added"
+                },
+                "_text": "237"
+              },
+              {
+                "_attributes": {
+                  "name": "start"
+                },
+                "_text": "0.5"
+              },
+              {
+                "_attributes": {
+                  "name": "disable"
+                },
+                "_text": "1"
+              }
+            ]
+          },
+          {
+            "_attributes": {
+              "id": "filter5"
+            },
+            "property": [
+              {
+                "_attributes": {
+                  "name": "iec_scale"
+                },
+                "_text": "0"
+              },
+              {
+                "_attributes": {
+                  "name": "mlt_service"
+                },
+                "_text": "audiolevel"
+              },
+              {
+                "_attributes": {
+                  "name": "disable"
+                },
+                "_text": "1"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

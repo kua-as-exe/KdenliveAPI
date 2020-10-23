@@ -1,0 +1,601 @@
+{
+  "declaration": {
+    "attributes": {
+      "version": "1.0",
+      "encoding": "utf-8"
+    }
+  },
+  "elements": [
+    {
+      "type": "element",
+      "name": "mlt",
+      "attributes": {
+        "LC_NUMERIC": "es_MX",
+        "producer": "main_bin",
+        "version": "6.23.0",
+        "root": "C:/ARREOLA/Projects/KdenliveAPI/tests"
+      },
+      "elements": [
+        {
+          "type": "element",
+          "name": "profile",
+          "attributes": {
+            "frame_rate_num": "30000",
+            "sample_aspect_num": "1",
+            "display_aspect_den": "9",
+            "colorspace": "709",
+            "progressive": "1",
+            "description": "HD 1080p 29.97 fps",
+            "display_aspect_num": "16",
+            "frame_rate_den": "1001",
+            "width": "1920",
+            "height": "1080",
+            "sample_aspect_den": "1"
+          }
+        },
+        {
+          "type": "element",
+          "name": "producer",
+          "attributes": {
+            "id": "XDDDDDD",
+            "in": "00:00:00.000",
+            "out": "00:04:00.767"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "length"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "7216"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "eof"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "pause"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "resource"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "C:/Users/Jorge Arreola/AppData/Roaming/kdenlive/library/Musica/Fondo/Amazement.mp3"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "playlist",
+          "attributes": {
+            "id": "main_bin"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:docproperties.activeTrack"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "0"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "entry",
+              "attributes": {
+                "producer": "XDDDDDD",
+                "in": "00:00:00.000",
+                "out": "00:04:00.767"
+              }
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "producer",
+          "attributes": {
+            "id": "black_track",
+            "in": "00:00:00.000",
+            "out": "00:20:41.775"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "length"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "2147483647"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "resource"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "black"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "producer",
+          "attributes": {
+            "id": "producer1",
+            "in": "00:00:00.000",
+            "out": "00:04:00.767"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "eof"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "pause"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "resource"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "C:/Users/Jorge Arreola/AppData/Roaming/kdenlive/library/Musica/Fondo/Amazement.mp3"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "playlist",
+          "attributes": {
+            "id": "playlist0"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:audio_track"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "entry",
+              "attributes": {
+                "producer": "producer1",
+                "in": "00:00:00.000",
+                "out": "00:04:00.767"
+              },
+              "elements": [
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "kdenlive:id"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "2"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "playlist",
+          "attributes": {
+            "id": "playlist1"
+          }
+        },
+        {
+          "type": "element",
+          "name": "tractor",
+          "attributes": {
+            "id": "tractor0",
+            "in": "00:00:00.000",
+            "out": "00:04:00.767"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:audio_track"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "track",
+              "attributes": {
+                "hide": "video",
+                "producer": "playlist0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "track",
+              "attributes": {
+                "hide": "both",
+                "producer": "playlist1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "filter",
+              "attributes": {
+                "id": "filter0"
+              },
+              "elements": [
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "window"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "75"
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "max_gain"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "20dB"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "filter",
+              "attributes": {
+                "id": "filter1"
+              },
+              "elements": [
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "channel"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "-1"
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "mlt_service"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "panner"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "filter",
+              "attributes": {
+                "id": "filter2"
+              },
+              "elements": [
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "iec_scale"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "0"
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "mlt_service"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "audiolevel"
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "disable"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "playlist",
+          "attributes": {
+            "id": "playlist2"
+          }
+        },
+        {
+          "type": "element",
+          "name": "playlist",
+          "attributes": {
+            "id": "playlist3"
+          }
+        },
+        {
+          "type": "element",
+          "name": "tractor",
+          "attributes": {
+            "id": "tractor1",
+            "in": "00:00:00.000"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:trackheight"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "67"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "track",
+              "attributes": {
+                "hide": "audio",
+                "producer": "playlist2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "track",
+              "attributes": {
+                "hide": "both",
+                "producer": "playlist3"
+              }
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "tractor",
+          "attributes": {
+            "id": "tractor2",
+            "global_feed": "1",
+            "in": "00:00:00.000",
+            "out": "00:20:41.775"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "track",
+              "attributes": {
+                "producer": "black_track"
+              }
+            },
+            {
+              "type": "element",
+              "name": "track",
+              "attributes": {
+                "producer": "tractor0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "track",
+              "attributes": {
+                "producer": "tractor1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "transition",
+              "attributes": {
+                "id": "transition0"
+              },
+              "elements": [
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "a_track"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "transition",
+              "attributes": {
+                "id": "transition1"
+              },
+              "elements": [
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "a_track"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "filter",
+              "attributes": {
+                "id": "filter3"
+              },
+              "elements": [
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "window"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "75"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "filter",
+              "attributes": {
+                "id": "filter4"
+              },
+              "elements": [
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "channel"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "-1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "filter",
+              "attributes": {
+                "id": "filter5"
+              },
+              "elements": [
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "iec_scale"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "0"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

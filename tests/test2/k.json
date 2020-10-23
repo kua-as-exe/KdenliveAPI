@@ -1,0 +1,365 @@
+{
+  "_declaration": {
+    "_attributes": {
+      "version": "1.0",
+      "encoding": "utf-8"
+    }
+  },
+  "mlt": {
+    "_attributes": {
+      "LC_NUMERIC": "es_MX",
+      "producer": "main_bin",
+      "version": "6.23.0",
+      "root": "C:/ARREOLA/Projects/KdenliveAPI/tests"
+    },
+    "profile": {
+      "_attributes": {
+        "frame_rate_num": "30000",
+        "sample_aspect_num": "1",
+        "display_aspect_den": "9",
+        "colorspace": "709",
+        "progressive": "1",
+        "description": "HD 1080p 29.97 fps",
+        "display_aspect_num": "16",
+        "frame_rate_den": "1001",
+        "width": "1920",
+        "height": "1080",
+        "sample_aspect_den": "1"
+      }
+    },
+    "producer": [
+      {
+        "_attributes": {
+          "id": "XDDDDDD",
+          "in": "00:00:00.000",
+          "out": "00:04:00.767"
+        },
+        "property": [
+          {
+            "_attributes": {
+              "name": "length"
+            },
+            "_text": "7216"
+          },
+          {
+            "_attributes": {
+              "name": "eof"
+            },
+            "_text": "pause"
+          },
+          {
+            "_attributes": {
+              "name": "resource"
+            },
+            "_text": "C:/Users/Jorge Arreola/AppData/Roaming/kdenlive/library/Musica/Fondo/Amazement.mp3"
+          }
+        ]
+      },
+      {
+        "_attributes": {
+          "id": "black_track",
+          "in": "00:00:00.000",
+          "out": "00:20:41.775"
+        },
+        "property": [
+          {
+            "_attributes": {
+              "name": "length"
+            },
+            "_text": "2147483647"
+          },
+          {
+            "_attributes": {
+              "name": "resource"
+            },
+            "_text": "black"
+          }
+        ]
+      },
+      {
+        "_attributes": {
+          "id": "producer1",
+          "in": "00:00:00.000",
+          "out": "00:04:00.767"
+        },
+        "property": [
+          {
+            "_attributes": {
+              "name": "eof"
+            },
+            "_text": "pause"
+          },
+          {
+            "_attributes": {
+              "name": "resource"
+            },
+            "_text": "C:/Users/Jorge Arreola/AppData/Roaming/kdenlive/library/Musica/Fondo/Amazement.mp3"
+          }
+        ]
+      }
+    ],
+    "playlist": [
+      {
+        "_attributes": {
+          "id": "main_bin"
+        },
+        "property": {
+          "_attributes": {
+            "name": "kdenlive:docproperties.activeTrack"
+          },
+          "_text": "0"
+        },
+        "entry": {
+          "_attributes": {
+            "producer": "XDDDDDD",
+            "in": "00:00:00.000",
+            "out": "00:04:00.767"
+          }
+        }
+      },
+      {
+        "_attributes": {
+          "id": "playlist0"
+        },
+        "property": {
+          "_attributes": {
+            "name": "kdenlive:audio_track"
+          },
+          "_text": "1"
+        },
+        "entry": {
+          "_attributes": {
+            "producer": "producer1",
+            "in": "00:00:00.000",
+            "out": "00:04:00.767"
+          },
+          "property": {
+            "_attributes": {
+              "name": "kdenlive:id"
+            },
+            "_text": "2"
+          }
+        }
+      },
+      {
+        "_attributes": {
+          "id": "playlist1"
+        }
+      },
+      {
+        "_attributes": {
+          "id": "playlist2"
+        }
+      },
+      {
+        "_attributes": {
+          "id": "playlist3"
+        }
+      }
+    ],
+    "tractor": [
+      {
+        "_attributes": {
+          "id": "tractor0",
+          "in": "00:00:00.000",
+          "out": "00:04:00.767"
+        },
+        "property": {
+          "_attributes": {
+            "name": "kdenlive:audio_track"
+          },
+          "_text": "1"
+        },
+        "track": [
+          {
+            "_attributes": {
+              "hide": "video",
+              "producer": "playlist0"
+            }
+          },
+          {
+            "_attributes": {
+              "hide": "both",
+              "producer": "playlist1"
+            }
+          }
+        ],
+        "filter": [
+          {
+            "_attributes": {
+              "id": "filter0"
+            },
+            "property": [
+              {
+                "_attributes": {
+                  "name": "window"
+                },
+                "_text": "75"
+              },
+              {
+                "_attributes": {
+                  "name": "max_gain"
+                },
+                "_text": "20dB"
+              }
+            ]
+          },
+          {
+            "_attributes": {
+              "id": "filter1"
+            },
+            "property": [
+              {
+                "_attributes": {
+                  "name": "channel"
+                },
+                "_text": "-1"
+              },
+              {
+                "_attributes": {
+                  "name": "mlt_service"
+                },
+                "_text": "panner"
+              }
+            ]
+          },
+          {
+            "_attributes": {
+              "id": "filter2"
+            },
+            "property": [
+              {
+                "_attributes": {
+                  "name": "iec_scale"
+                },
+                "_text": "0"
+              },
+              {
+                "_attributes": {
+                  "name": "mlt_service"
+                },
+                "_text": "audiolevel"
+              },
+              {
+                "_attributes": {
+                  "name": "disable"
+                },
+                "_text": "1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "_attributes": {
+          "id": "tractor1",
+          "in": "00:00:00.000"
+        },
+        "property": {
+          "_attributes": {
+            "name": "kdenlive:trackheight"
+          },
+          "_text": "67"
+        },
+        "track": [
+          {
+            "_attributes": {
+              "hide": "audio",
+              "producer": "playlist2"
+            }
+          },
+          {
+            "_attributes": {
+              "hide": "both",
+              "producer": "playlist3"
+            }
+          }
+        ]
+      },
+      {
+        "_attributes": {
+          "id": "tractor2",
+          "global_feed": "1",
+          "in": "00:00:00.000",
+          "out": "00:20:41.775"
+        },
+        "track": [
+          {
+            "_attributes": {
+              "producer": "black_track"
+            }
+          },
+          {
+            "_attributes": {
+              "producer": "tractor0"
+            }
+          },
+          {
+            "_attributes": {
+              "producer": "tractor1"
+            }
+          }
+        ],
+        "transition": [
+          {
+            "_attributes": {
+              "id": "transition0"
+            },
+            "property": {
+              "_attributes": {
+                "name": "a_track"
+              },
+              "_text": "0"
+            }
+          },
+          {
+            "_attributes": {
+              "id": "transition1"
+            },
+            "property": {
+              "_attributes": {
+                "name": "a_track"
+              },
+              "_text": "0"
+            }
+          }
+        ],
+        "filter": [
+          {
+            "_attributes": {
+              "id": "filter3"
+            },
+            "property": {
+              "_attributes": {
+                "name": "window"
+              },
+              "_text": "75"
+            }
+          },
+          {
+            "_attributes": {
+              "id": "filter4"
+            },
+            "property": {
+              "_attributes": {
+                "name": "channel"
+              },
+              "_text": "-1"
+            }
+          },
+          {
+            "_attributes": {
+              "id": "filter5"
+            },
+            "property": {
+              "_attributes": {
+                "name": "iec_scale"
+              },
+              "_text": "0"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

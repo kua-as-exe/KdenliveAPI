@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mlt LC_NUMERIC="es_MX" producer="main_bin" version="6.23.0" root="C:/ARREOLA/Projects/KdenliveAPI/tests">
+ <profile frame_rate_num="30000" sample_aspect_num="1" display_aspect_den="9" colorspace="709" progressive="1" description="HD 1080p 29.97 fps" display_aspect_num="16" frame_rate_den="1001" width="1920" height="1080" sample_aspect_den="1"/>
+ <producer id="XDDDDDD" in="00:00:00.000" out="00:04:00.767">
+  <property name="length">7216</property>
+  <property name="eof">pause</property>
+  <property name="resource">C:/Users/Jorge Arreola/AppData/Roaming/kdenlive/library/Musica/Fondo/Amazement.mp3</property>
+ </producer>
+ <playlist id="main_bin">
+  <property name="kdenlive:docproperties.activeTrack">0</property>
+  <entry producer="XDDDDDD" in="00:00:00.000" out="00:04:00.767"/>
+ </playlist>
+ <producer id="black_track" in="00:00:00.000" out="00:20:41.775">
+  <property name="length">2147483647</property>
+  <property name="resource">black</property>
+ </producer>
+ <producer id="producer1" in="00:00:00.000" out="00:04:00.767">
+  <property name="eof">pause</property>
+  <property name="resource">C:/Users/Jorge Arreola/AppData/Roaming/kdenlive/library/Musica/Fondo/Amazement.mp3</property>
+ </producer>
+ <playlist id="playlist0">
+  <property name="kdenlive:audio_track">1</property>
+  <entry producer="producer1" in="00:00:00.000" out="00:04:00.767">
+   <property name="kdenlive:id">2</property>
+  </entry>
+ </playlist>
+ <playlist id="playlist1"/>
+ <tractor id="tractor0" in="00:00:00.000" out="00:04:00.767">
+  <property name="kdenlive:audio_track">1</property>
+  <track hide="video" producer="playlist0"/>
+  <track hide="both" producer="playlist1"/>
+  <filter id="filter0">
+   <property name="window">75</property>
+   <property name="max_gain">20dB</property>
+  </filter>
+  <filter id="filter1">
+   <property name="channel">-1</property>
+   <property name="mlt_service">panner</property>
+  </filter>
+  <filter id="filter2">
+   <property name="iec_scale">0</property>
+   <property name="mlt_service">audiolevel</property>
+   <property name="disable">1</property>
+  </filter>
+ </tractor>
+ <playlist id="playlist2"/>
+ <playlist id="playlist3"/>
+ <tractor id="tractor1" in="00:00:00.000">
+  <property name="kdenlive:trackheight">67</property>
+  <track hide="audio" producer="playlist2"/>
+  <track hide="both" producer="playlist3"/>
+ </tractor>
+ <tractor id="tractor2" global_feed="1" in="00:00:00.000" out="00:20:41.775">
+  <track producer="black_track"/>
+  <track producer="tractor0"/>
+  <track producer="tractor1"/>
+  <transition id="transition0">
+   <property name="a_track">0</property>
+  </transition>
+  <transition id="transition1">
+   <property name="a_track">0</property>
+  </transition>
+  <filter id="filter3">
+   <property name="window">75</property>
+  </filter>
+  <filter id="filter4">
+   <property name="channel">-1</property>
+  </filter>
+  <filter id="filter5">
+   <property name="iec_scale">0</property>
+  </filter>
+ </tractor>
+</mlt>
