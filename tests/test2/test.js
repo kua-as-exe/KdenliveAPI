@@ -12,51 +12,107 @@ fs.writeFileSync('./K.2.json', result2);
 
 //import { processProperty } from './processProperty';
 const processProperty = {
-    E2D: (eP) => {
-        if( eP.name == 'property' && eP.attributes.name){
-            let key = String(eP.attributes.name);
-            let value = "";
-            if( eP.elements && eP.elements.length > 0 && eP.elements[0].type == 'text')
-                value = String(eP.elements[0].text)
-            return ({ key,  value });
-        }
-    }, D2E: (key, value) => {
-      return ({
-        "type": "element",
-        "name": "property",
-        "attributes": {
-          "name": key
-        },
-        "elements": [
-          {
-            "type": "text",
-            "text": value
-          }
-        ]
-      })
-    }
-  };
+  E2D: (e, propE, propIndex) => {
+    
+    let key = String(propE.attributes.name); // key
+    let value = ''
+    if( propE.elements && propE.elements.length > 0 && propE.elements[0] && propE.elements[0].type == 'text')
+      value = String(propE.elements[0].text);
 
+    e.properties[key] = value; // value
+    delete e.elements[propIndex];
+    return e;
+
+  }, D2E: (e, key) => {
+    //if(!e.properties || !e.properties[key]) return e; //prepare for exception
+    let propertyElement = {
+      "type": "element",
+      "name": "property",
+      "attributes": {
+        "name": key
+      },
+    }
+    let value = e.properties[key];
+    if(value) propertyElement.elements = [
+      {
+        "type": "text",
+        "text": value
+      }
+    ]
+    e.push(propertyElement)
+    return e;
+  }
+};
+const processAttribute = {
+  E2D: (e, attr) => {
+    if(e.attributes && e.attributes[attr]){
+      e[attr] = e.attributes[attr];
+      delete e.attributes[attr];
+    }
+    return e;
+  }, D2E: (e, attr) => { 
+    if(e[attr]){
+      e.attributes[attr] = e[attr];
+      delete e[attr];
+    }
+    return e;
+  }
+};
+
+const processAttributes = {
+  E2D: (e, attrs) => {
+    attrs.forEach( attr => e = processAttribute.E2D(e, attr) );
+
+    return e;
+  }, D2E: (e, attrs) => { 
+    attrs.forEach( attr => e = processAttribute.D2E(e, attr) );
+    return e;
+  }
+};
+
+const tryCleanKey = (e, key) => {
+
+  if(e && e[key] && Object.keys(e[key]).length == 0)
+    delete e[key]; // delete key if its void
+
+  return e;
+};
+
+const elementsTypesAttributes = {
+  entry: ['id', 'in', 'out', 'producer'],
+  producer: ['id', 'in', 'out'],
+  tractor: ['id', 'in', 'out', 'global_feed'],
+  playlist: ['id'],
+  track: ['producer', 'hide'],
+  transition: ['id'],
+  filter: ['id'],
+}
 
 const wrapper = (e) => {
-    console.log("Element: ", e.name);
+  console.log("Element: ", e.name);
 
-    if(e.properties === undefined) e.properties = {};
-    if(e.elements && e.elements.length > 0){
-        e.elements.forEach( (elem, index) => {
-            if(elem.name === 'property'){
-                let {key, value} = processProperty.E2D(elem);
-                e.properties[key] = value;
-                delete e.elements[index];
-            }else{
-                wrapper(elem)
-            }
-        });
-        e.elements = e.elements.filter( elem => elem !== undefined);
-    }
+  delete e.type; // | e.type = "element"
+  if(elementsTypesAttributes[e.name])
+    e = processAttributes.E2D(e, elementsTypesAttributes[e.name])
+
+  if(e.properties === undefined) e.properties = {};
+  if(e.elements && e.elements.length > 0){
+
+    e.elements.forEach( (child, index) => {
+      if(child.name === 'property'){
+        e = processProperty.E2D(e, child, index);
+      }else
+        wrapper(child)
+    });
+
+    e.elements = e.elements.filter( elem => elem !== undefined);
+  }
+  e = tryCleanKey(e, 'elements');
+  e = tryCleanKey(e, 'attributes');
+  e = tryCleanKey(e, 'properties');
 }
 var js = convert.xml2js(xml, {compact: false, spaces: 2});
 console.log(js)
 wrapper(js.elements[0]);
-console.log(js.elements[0].elements[1])
-fs.writeFileSync('./K.3.json', JSON.stringify(js, null, 2));
+//console.log(js.elements[0].elements[1])
+fs.writeFileSync('./K.7.json', JSON.stringify(js, null, 2));
