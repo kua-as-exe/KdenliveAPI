@@ -3,14 +3,6 @@ var fs = require('fs');
 
 var xml = fs.readFileSync('./test.kdenlive');
 
-var result1 = convert.xml2json(xml, {compact: true, spaces: 2});
-var result2 = convert.xml2json(xml, {compact: false, spaces: 2});
-//console.log(result1, '\n', result2);
-
-fs.writeFileSync('./k.2.compact.json', result1);
-fs.writeFileSync('./K.2.json', result2);
-
-//import { processProperty } from './processProperty';
 const processProperty = {
   E2D: (e, propE, propIndex) => {
     
@@ -21,8 +13,7 @@ const processProperty = {
 
     e.properties[key] = value; // value
     delete e.elements[propIndex];
-    return e;
-
+    
   }, D2E: (e, key) => {
     //if(!e.properties || !e.properties[key]) return e; //prepare for exception
     let propertyElement = {
@@ -39,8 +30,7 @@ const processProperty = {
         "text": value
       }
     ]
-    e.push(propertyElement)
-    return e;
+    e.elements = [propertyElement, ...e.elements];
   }
 };
 const processAttribute = {
@@ -49,33 +39,22 @@ const processAttribute = {
       e[attr] = e.attributes[attr];
       delete e.attributes[attr];
     }
-    return e;
   }, D2E: (e, attr) => { 
     if(e[attr]){
       e.attributes[attr] = e[attr];
       delete e[attr];
     }
-    return e;
   }
 };
-
 const processAttributes = {
-  E2D: (e, attrs) => {
-    attrs.forEach( attr => e = processAttribute.E2D(e, attr) );
-
-    return e;
-  }, D2E: (e, attrs) => { 
-    attrs.forEach( attr => e = processAttribute.D2E(e, attr) );
-    return e;
-  }
+  E2D: (e, attrs) => 
+    attrs.forEach( attr => processAttribute.E2D(e, attr) ),
+  D2E: (e, attrs) =>
+    attrs.forEach( attr => processAttribute.D2E(e, attr) )
 };
-
-const tryCleanKey = (e, key) => {
-
+const cleanKeyIfVoid = (e, key) => {
   if(e && e[key] && Object.keys(e[key]).length == 0)
     delete e[key]; // delete key if its void
-
-  return e;
 };
 
 const elementsTypesAttributes = {
@@ -92,27 +71,29 @@ const wrapper = (e) => {
   console.log("Element: ", e.name);
 
   delete e.type; // | e.type = "element"
-  if(elementsTypesAttributes[e.name])
-    e = processAttributes.E2D(e, elementsTypesAttributes[e.name])
+  if(elementsTypesAttributes[e.name]) // move specific element.attributes to element (root)
+    processAttributes.E2D(e, elementsTypesAttributes[e.name]);
 
   if(e.properties === undefined) e.properties = {};
-  if(e.elements && e.elements.length > 0){
-
+  if(e.elements && e.elements.length > 0){ // if element has child elements
     e.elements.forEach( (child, index) => {
-      if(child.name === 'property'){
-        e = processProperty.E2D(e, child, index);
-      }else
-        wrapper(child)
+      if(child.name === 'property')
+        processProperty.E2D(e, child, index); // just process the property
+      else
+        wrapper(child); // recurse
     });
-
-    e.elements = e.elements.filter( elem => elem !== undefined);
+    e.elements = e.elements.filter( elem => elem !== undefined); // filter empty elements
   }
-  e = tryCleanKey(e, 'elements');
-  e = tryCleanKey(e, 'attributes');
-  e = tryCleanKey(e, 'properties');
+
+  let keys2Clean = ['elements', 'attributes', 'properties']; // clean preprocesed keys if they are clean
+  keys2Clean.forEach( key => cleanKeyIfVoid(e, key) ); // the same as up
+
 }
+
 var js = convert.xml2js(xml, {compact: false, spaces: 2});
+
 console.log(js)
+fs.writeFileSync('./K.1.json', JSON.stringify(js, null, 2));
+
 wrapper(js.elements[0]);
-//console.log(js.elements[0].elements[1])
-fs.writeFileSync('./K.7.json', JSON.stringify(js, null, 2));
+fs.writeFileSync('./K.8.json', JSON.stringify(js, null, 2));
