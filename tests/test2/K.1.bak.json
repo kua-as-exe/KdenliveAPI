@@ -1111,9 +1111,9 @@
               "type": "element",
               "name": "entry",
               "attributes": {
+                "producer": "producer0",
                 "in": "00:00:00.000",
-                "out": "00:13:03.000",
-                "producer": "producer0"
+                "out": "00:13:03.000"
               }
             }
           ]
@@ -1951,9 +1951,9 @@
               "type": "element",
               "name": "entry",
               "attributes": {
+                "producer": "producer1",
                 "in": "00:00:00.000",
-                "out": "00:13:03.000",
-                "producer": "producer1"
+                "out": "00:13:03.000"
               },
               "elements": [
                 {
@@ -2207,16 +2207,16 @@
               "type": "element",
               "name": "track",
               "attributes": {
-                "producer": "playlist0",
-                "hide": "video"
+                "hide": "video",
+                "producer": "playlist0"
               }
             },
             {
               "type": "element",
               "name": "track",
               "attributes": {
-                "producer": "playlist1",
-                "hide": "both"
+                "hide": "both",
+                "producer": "playlist1"
               }
             },
             {
@@ -2987,9 +2987,9 @@
               "type": "element",
               "name": "entry",
               "attributes": {
+                "producer": "producer2",
                 "in": "00:00:00.000",
-                "out": "00:13:03.000",
-                "producer": "producer2"
+                "out": "00:13:03.000"
               },
               "elements": [
                 {
@@ -3082,16 +3082,16 @@
               "type": "element",
               "name": "track",
               "attributes": {
-                "producer": "playlist2",
-                "hide": "audio"
+                "hide": "audio",
+                "producer": "playlist2"
               }
             },
             {
               "type": "element",
               "name": "track",
               "attributes": {
-                "producer": "playlist3",
-                "hide": "both"
+                "hide": "both",
+                "producer": "playlist3"
               }
             }
           ]
@@ -3101,9 +3101,9 @@
           "name": "tractor",
           "attributes": {
             "id": "tractor2",
+            "global_feed": "1",
             "in": "00:00:00.000",
-            "out": "00:29:43.033",
-            "global_feed": "1"
+            "out": "00:29:43.033"
           },
           "elements": [
             {

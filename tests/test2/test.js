@@ -30,7 +30,8 @@ const processProperty = {
         "text": value
       }
     ]
-    e.elements = [propertyElement, ...e.elements];
+    //e.elements = [...e.elements, propertyElement];
+    return propertyElement;
   }
 };
 const processAttribute = {
@@ -90,10 +91,69 @@ const wrapper = (e) => {
 
 }
 
+// KdenliveXML to prettyfied json
+/*
 var js = convert.xml2js(xml, {compact: false, spaces: 2});
-
 console.log(js)
 fs.writeFileSync('./K.1.json', JSON.stringify(js, null, 2));
-
 wrapper(js.elements[0]);
 fs.writeFileSync('./K.8.json', JSON.stringify(js, null, 2));
+*/
+
+function reorder (order, obj) {
+  return JSON.parse(JSON.stringify( obj, order , 4));
+    /*
+  return order.reduce (function (rslt, prop) {
+      rslt[prop] = obj[prop];
+      return rslt;   
+    }, {});
+    */
+}
+
+// Prettyfied json to KdenliveXML
+
+const antiwrapper = (e) => {
+  console.log("Element: ", e.name);
+
+  let keys2Recover = ['attributes', 'properties']; // create errased keys
+  keys2Recover.forEach( key => {
+    if(e[key] == undefined) e[key] = {};
+  } ); // the same as up
+  
+  if(e.elements === undefined) e.elements = [];
+
+  e.elements.forEach( (child, index) => 
+    e.elements[index] = antiwrapper(child) // recurse
+  );
+
+  if(e.properties){
+    let propElements = [];
+    Object.keys(e.properties).forEach( (key) => {
+      let propE = processProperty.D2E(e, key) // just process the property
+      propElements.push(propE);
+     })
+    e.elements = [...propElements, ...e.elements];
+    delete e.properties // delete "properties" key
+  }
+
+  if(elementsTypesAttributes[e.name]) // move specific element.attributes to element (root)
+  processAttributes.D2E(e, elementsTypesAttributes[e.name]);
+  
+  if(e.elements.length == 0) delete e.elements;
+
+  let t = {
+    type: 'element',
+    name: e.name,
+  }
+  if(e.attributes) t.attributes = e.attributes
+  if(e.elements) t.elements = e.elements
+  console.log(t);
+  return t;
+
+}
+
+//var js = convert.xml2js(xml, {compact: false, spaces: 2});
+var js = JSON.parse(fs.readFileSync('./K.8.json'));
+//console.log(js)
+js.elements[0] = antiwrapper(js.elements[0]);
+fs.writeFileSync('./K.1.json', JSON.stringify(js, null, 2));
