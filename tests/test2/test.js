@@ -1,8 +1,6 @@
 var convert = require('xml-js');
 var fs = require('fs');
 
-var xml = fs.readFileSync('./test.kdenlive');
-
 const processProperty = {
   E2D: (e, propE, propIndex) => {
     
@@ -69,7 +67,7 @@ const elementsTypesAttributes = {
 }
 
 const wrapper = (e) => {
-  console.log("Element: ", e.name);
+  //console.log("Element: ", e.name);
 
   delete e.type; // | e.type = "element"
   if(elementsTypesAttributes[e.name]) // move specific element.attributes to element (root)
@@ -91,40 +89,18 @@ const wrapper = (e) => {
 
 }
 
-// KdenliveXML to prettyfied json
-/*
-var js = convert.xml2js(xml, {compact: false, spaces: 2});
-console.log(js)
-fs.writeFileSync('./K.1.json', JSON.stringify(js, null, 2));
-wrapper(js.elements[0]);
-fs.writeFileSync('./K.8.json', JSON.stringify(js, null, 2));
-*/
-
-function reorder (order, obj) {
-  return JSON.parse(JSON.stringify( obj, order , 4));
-    /*
-  return order.reduce (function (rslt, prop) {
-      rslt[prop] = obj[prop];
-      return rslt;   
-    }, {});
-    */
-}
-
-// Prettyfied json to KdenliveXML
-
 const antiwrapper = (e) => {
-  console.log("Element: ", e.name);
+  //console.log("Element: ", e.name);
 
   let keys2Recover = ['attributes', 'properties']; // create errased keys
   keys2Recover.forEach( key => {
     if(e[key] == undefined) e[key] = {};
   } ); // the same as up
-  
   if(e.elements === undefined) e.elements = [];
 
-  e.elements.forEach( (child, index) => 
+  e.elements.forEach( (child, index) => {
     e.elements[index] = antiwrapper(child) // recurse
-  );
+  });
 
   if(e.properties){
     let propElements = [];
@@ -147,13 +123,32 @@ const antiwrapper = (e) => {
   }
   if(e.attributes) t.attributes = e.attributes
   if(e.elements) t.elements = e.elements
-  console.log(t);
   return t;
-
 }
 
-//var js = convert.xml2js(xml, {compact: false, spaces: 2});
-var js = JSON.parse(fs.readFileSync('./K.8.json'));
-//console.log(js)
-js.elements[0] = antiwrapper(js.elements[0]);
+const process = {
+  // js.elements[0] is the "mlt" on xml element
+  E2D: (js) => {
+    wrapper(js.elements[0]);
+    return js;
+  },
+  D2E: (js) => {
+    js.elements[0] = antiwrapper(js.elements[0]);
+    return js;
+  }
+}
+
+var xml = fs.readFileSync('./test.kdenlive');
+
+// KdenliveXML to prettyfied json
+var js = convert.xml2js(xml, {compact: false, spaces: 2});
+console.log(js)
+js = process.E2D(js);
+//fs.writeFileSync('./K.8.json', JSON.stringify(js, null, 2));
+js.elements[0].elements[1].properties.resource = "ubicación/mi video lol.mp4";
+js.elements[0].elements[1].in = "00:15:00.000";
+
+// Prettyfied json to KdenliveXML
+//var js = JSON.parse(fs.readFileSync('./K.8.json'));
+js = process.D2E(js);
 fs.writeFileSync('./K.1.json', JSON.stringify(js, null, 2));
