@@ -12,7 +12,7 @@
         "LC_NUMERIC": "es_MX",
         "producer": "main_bin",
         "version": "6.23.0",
-        "root": "C:/ARREOLA/Projects/KdenliveAPI/tests/test3"
+        "root": "C:/ARREOLA/Projects/KdenliveAPI/tests/test4"
       },
       "elements": [
         {
@@ -66,7 +66,7 @@
             "meta.media.0.codec.name": "h264",
             "meta.media.0.codec.long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
             "meta.media.0.codec.bit_rate": "0",
-            "meta.attr.0.stream.DURATION.markup": "00:13:03.033000000",
+            "meta.attr.0.stream.DURATION.markup": "00:03:07.133000000",
             "meta.media.1.stream.type": "audio",
             "meta.media.1.codec.sample_fmt": "fltp",
             "meta.media.1.codec.sample_rate": "44100",
@@ -75,7 +75,7 @@
             "meta.media.1.codec.long_name": "AAC (Advanced Audio Coding)",
             "meta.media.1.codec.bit_rate": "0",
             "meta.attr.1.stream.title.markup": "simple_aac_recording",
-            "meta.attr.1.stream.DURATION.markup": "00:13:02.954000000",
+            "meta.attr.1.stream.DURATION.markup": "00:03:07.060000000",
             "meta.attr.ENCODER.markup": "Lavf58.29.100",
             "meta.media.sample_aspect_num": "1",
             "meta.media.sample_aspect_den": "1",
@@ -140,7 +140,7 @@
           "name": "producer",
           "id": "black_track",
           "in": "00:00:00.000",
-          "out": "00:29:43.033",
+          "out": "00:22:05.000",
           "properties": {
             "length": "2147483647",
             "eof": "continue",
@@ -166,7 +166,7 @@
             "mlt_service": "avformat-novalidate",
             "seekable": "1",
             "aspect_ratio": "1",
-            "kdenlive:clipname": "genial",
+            "kdenlive:clipname": "cool",
             "kdenlive:folderid": "-1",
             "kdenlive:id": "2",
             "kdenlive:file_size": "27493394",
@@ -187,7 +187,7 @@
             "meta.media.0.codec.name": "h264",
             "meta.media.0.codec.long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
             "meta.media.0.codec.bit_rate": "0",
-            "meta.attr.0.stream.DURATION.markup": "00:13:03.033000000",
+            "meta.attr.0.stream.DURATION.markup": "00:03:07.133000000",
             "meta.media.1.stream.type": "audio",
             "meta.media.1.codec.sample_fmt": "fltp",
             "meta.media.1.codec.sample_rate": "44100",
@@ -196,7 +196,7 @@
             "meta.media.1.codec.long_name": "AAC (Advanced Audio Coding)",
             "meta.media.1.codec.bit_rate": "0",
             "meta.attr.1.stream.title.markup": "simple_aac_recording",
-            "meta.attr.1.stream.DURATION.markup": "00:13:02.954000000",
+            "meta.attr.1.stream.DURATION.markup": "00:03:07.060000000",
             "meta.attr.ENCODER.markup": "Lavf58.29.100",
             "meta.media.sample_aspect_num": "1",
             "meta.media.sample_aspect_den": "1",
@@ -222,7 +222,7 @@
           "entries": [
             {
               "in": "00:00:00.000",
-              "out": "00:13:03.000",
+              "out": "00:05:24.967",
               "producer": "producer1",
               "properties": {
                 "kdenlive:id": "2"
@@ -260,7 +260,7 @@
           "name": "tractor",
           "id": "tractor0",
           "in": "00:00:00.000",
-          "out": "00:13:03.000",
+          "out": "00:05:24.967",
           "properties": {
             "kdenlive:audio_track": "1",
             "kdenlive:trackheight": "67",
@@ -326,7 +326,7 @@
             "meta.media.0.codec.name": "h264",
             "meta.media.0.codec.long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
             "meta.media.0.codec.bit_rate": "0",
-            "meta.attr.0.stream.DURATION.markup": "00:13:03.033000000",
+            "meta.attr.0.stream.DURATION.markup": "00:03:07.133000000",
             "meta.media.1.stream.type": "audio",
             "meta.media.1.codec.sample_fmt": "fltp",
             "meta.media.1.codec.sample_rate": "44100",
@@ -335,7 +335,7 @@
             "meta.media.1.codec.long_name": "AAC (Advanced Audio Coding)",
             "meta.media.1.codec.bit_rate": "0",
             "meta.attr.1.stream.title.markup": "simple_aac_recording",
-            "meta.attr.1.stream.DURATION.markup": "00:13:02.954000000",
+            "meta.attr.1.stream.DURATION.markup": "00:03:07.060000000",
             "meta.attr.ENCODER.markup": "Lavf58.29.100",
             "meta.media.sample_aspect_num": "1",
             "meta.media.sample_aspect_den": "1",
@@ -358,7 +358,7 @@
           "entries": [
             {
               "in": "00:00:00.000",
-              "out": "00:13:03.000",
+              "out": "00:05:24.967",
               "producer": "producer2",
               "properties": {
                 "kdenlive:id": "2"
@@ -374,7 +374,7 @@
           "name": "tractor",
           "id": "tractor1",
           "in": "00:00:00.000",
-          "out": "00:13:03.000",
+          "out": "00:05:24.967",
           "properties": {
             "kdenlive:trackheight": "67",
             "kdenlive:collapsed": "28",
@@ -397,7 +397,7 @@
           "name": "tractor",
           "id": "tractor2",
           "in": "00:00:00.000",
-          "out": "00:29:43.033",
+          "out": "00:22:05.000",
           "global_feed": "1",
           "tracks": [
             {
