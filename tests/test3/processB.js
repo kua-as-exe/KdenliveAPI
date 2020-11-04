@@ -49,7 +49,6 @@ const extend = (e) => {
 
   Object.keys(specificElements).forEach( specificKey => {
     let key = specificElements[specificKey];
-    console.log(key);
     if(e[key]){
       if(e.elements === undefined) e.elements = [];
       e[key].forEach( (child) => {
@@ -75,3 +74,7 @@ module.exports = {
     return js;
   }
 }
+
+// this code sucks :)
+// but it works
+// so vamonos alv

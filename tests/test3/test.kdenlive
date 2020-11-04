@@ -11,7 +11,7 @@
   <property name="mlt_service">avformat-novalidate</property>
   <property name="seekable">1</property>
   <property name="aspect_ratio">1</property>
-  <property name="kdenlive:clipname">genial</property>
+  <property name="kdenlive:clipname">cool</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">2</property>
   <property name="kdenlive:file_size">27493394</property>
@@ -57,7 +57,7 @@
  <playlist id="main_bin">
   <property name="kdenlive:docproperties.activeTrack">0</property>
   <property name="kdenlive:docproperties.audioChannels">2</property>
-  <property name="kdenlive:docproperties.audioTarget">0</property>
+  <property name="kdenlive:docproperties.audioTarget">-1</property>
   <property name="kdenlive:docproperties.disablepreview">0</property>
   <property name="kdenlive:docproperties.documentid">1603402929383</property>
   <property name="kdenlive:docproperties.enableTimelineZone">0</property>
@@ -98,7 +98,7 @@
   <property name="kdenlive:docproperties.seekOffset">30000</property>
   <property name="kdenlive:docproperties.version">1</property>
   <property name="kdenlive:docproperties.verticalzoom">1</property>
-  <property name="kdenlive:docproperties.videoTarget">1</property>
+  <property name="kdenlive:docproperties.videoTarget">-1</property>
   <property name="kdenlive:docproperties.zonein">0</property>
   <property name="kdenlive:docproperties.zoneout">75</property>
   <property name="kdenlive:docproperties.zoom">16</property>
@@ -126,7 +126,7 @@
   <property name="mlt_service">avformat-novalidate</property>
   <property name="seekable">1</property>
   <property name="aspect_ratio">1</property>
-  <property name="kdenlive:clipname">XD</property>
+  <property name="kdenlive:clipname">genial</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">2</property>
   <property name="kdenlive:file_size">27493394</property>
