@@ -92,14 +92,6 @@
         },
         {
           "name": "playlist",
-          "elements": [
-            {
-              "name": "entry",
-              "in": "00:00:00.000",
-              "out": "00:13:03.000",
-              "producer": "producer0"
-            }
-          ],
           "id": "main_bin",
           "properties": {
             "kdenlive:docproperties.activeTrack": "0",
@@ -135,7 +127,15 @@
             "kdenlive:expandedFolders": "",
             "kdenlive:documentnotes": "",
             "xml_retain": "1"
-          }
+          },
+          "elements": [
+            {
+              "name": "entry",
+              "in": "00:00:00.000",
+              "out": "00:13:03.000",
+              "producer": "producer0"
+            }
+          ]
         },
         {
           "name": "producer",
@@ -216,6 +216,10 @@
         },
         {
           "name": "playlist",
+          "id": "playlist0",
+          "properties": {
+            "kdenlive:audio_track": "1"
+          },
           "elements": [
             {
               "name": "entry",
@@ -248,11 +252,7 @@
                 "disable": "1"
               }
             }
-          ],
-          "id": "playlist0",
-          "properties": {
-            "kdenlive:audio_track": "1"
-          }
+          ]
         },
         {
           "name": "playlist",
@@ -260,6 +260,17 @@
         },
         {
           "name": "tractor",
+          "id": "tractor0",
+          "in": "00:00:00.000",
+          "out": "00:13:03.000",
+          "properties": {
+            "kdenlive:audio_track": "1",
+            "kdenlive:trackheight": "67",
+            "kdenlive:collapsed": "28",
+            "kdenlive:thumbs_format": "",
+            "kdenlive:audio_rec": "",
+            "kdenlive:timeline_active": "1"
+          },
           "elements": [
             {
               "name": "track",
@@ -280,18 +291,7 @@
                 "disable": "1"
               }
             }
-          ],
-          "id": "tractor0",
-          "in": "00:00:00.000",
-          "out": "00:13:03.000",
-          "properties": {
-            "kdenlive:audio_track": "1",
-            "kdenlive:trackheight": "67",
-            "kdenlive:collapsed": "28",
-            "kdenlive:thumbs_format": "",
-            "kdenlive:audio_rec": "",
-            "kdenlive:timeline_active": "1"
-          }
+          ]
         },
         {
           "name": "producer",
@@ -357,6 +357,7 @@
         },
         {
           "name": "playlist",
+          "id": "playlist2",
           "elements": [
             {
               "name": "entry",
@@ -367,8 +368,7 @@
                 "kdenlive:id": "2"
               }
             }
-          ],
-          "id": "playlist2"
+          ]
         },
         {
           "name": "playlist",
@@ -376,6 +376,16 @@
         },
         {
           "name": "tractor",
+          "id": "tractor1",
+          "in": "00:00:00.000",
+          "out": "00:13:03.000",
+          "properties": {
+            "kdenlive:trackheight": "67",
+            "kdenlive:collapsed": "28",
+            "kdenlive:thumbs_format": "",
+            "kdenlive:audio_rec": "",
+            "kdenlive:timeline_active": "1"
+          },
           "elements": [
             {
               "name": "track",
@@ -387,20 +397,14 @@
               "producer": "playlist3",
               "hide": "both"
             }
-          ],
-          "id": "tractor1",
-          "in": "00:00:00.000",
-          "out": "00:13:03.000",
-          "properties": {
-            "kdenlive:trackheight": "67",
-            "kdenlive:collapsed": "28",
-            "kdenlive:thumbs_format": "",
-            "kdenlive:audio_rec": "",
-            "kdenlive:timeline_active": "1"
-          }
+          ]
         },
         {
           "name": "tractor",
+          "id": "tractor2",
+          "in": "00:00:00.000",
+          "out": "00:29:43.033",
+          "global_feed": "1",
           "elements": [
             {
               "name": "track",
@@ -474,11 +478,7 @@
                 "disable": "1"
               }
             }
-          ],
-          "id": "tractor2",
-          "in": "00:00:00.000",
-          "out": "00:29:43.033",
-          "global_feed": "1"
+          ]
         }
       ]
     }

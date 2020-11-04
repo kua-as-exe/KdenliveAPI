@@ -13,7 +13,7 @@ const compact = (e) => {
     delete child.name;
     if(e[key] === undefined) e[key] = [];
     e[key].push(child);
-    delete index;
+    delete e.elements[index];
   }
   // ---
 
@@ -24,6 +24,8 @@ const compact = (e) => {
       else
         e.elements[index] = compact(child);
     });
+    e.elements = e.elements.filter( elem => elem !== undefined); // filter empty elements
+    if(e.elements.length == 0) delete e.elements;
   }
     
   return e;
@@ -31,27 +33,34 @@ const compact = (e) => {
 
 const extend = (e) => {
 
-  if(e.elements === undefined) e.elements = [];
-  let specificElementsArray = [];
-  Object.keys(specificElements).forEach( specificKey => {
-    let key = specificElements[specificKey];
-    if(e[key]){
-      e[key].forEach( (child, index) => {
-        child.name = specificKey;
-        specificElementsArray.push(child);
-      })
-      delete e[key];
+  function pushSpecificElement(child, name){
+    let t = {
+      name,
+      ...child
     }
-  })
-  e.elements = [specificElements, ...e.elements];
-  // wtf with all the "SPECIFIC", it mess
-  // sorry man, its 11:15pm and I dont have another idea.
+    e.elements.push(t);
+  }
 
   if(e.elements){
     e.elements.forEach( (child, index) => 
       e.elements[index] = extend(child)
     );
   }
+
+  Object.keys(specificElements).forEach( specificKey => {
+    let key = specificElements[specificKey];
+    console.log(key);
+    if(e[key]){
+      if(e.elements === undefined) e.elements = [];
+      e[key].forEach( (child) => {
+        pushSpecificElement(child, specificKey);
+      })
+      delete e[key];
+    }
+  })
+  // wtf with all the "SPECIFIC", it mess
+  // sorry man, its 11:15pm and I dont have another idea.
+  
   return e;
 }
 
