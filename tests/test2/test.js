@@ -1,154 +1,19 @@
 var convert = require('xml-js');
 var fs = require('fs');
 
-const processProperty = {
-  E2D: (e, propE, propIndex) => {
-    
-    let key = String(propE.attributes.name); // key
-    let value = ''
-    if( propE.elements && propE.elements.length > 0 && propE.elements[0] && propE.elements[0].type == 'text')
-      value = String(propE.elements[0].text);
-
-    e.properties[key] = value; // value
-    delete e.elements[propIndex];
-    
-  }, D2E: (e, key) => {
-    //if(!e.properties || !e.properties[key]) return e; //prepare for exception
-    let propertyElement = {
-      "type": "element",
-      "name": "property",
-      "attributes": {
-        "name": key
-      },
-    }
-    let value = e.properties[key];
-    if(value) propertyElement.elements = [
-      {
-        "type": "text",
-        "text": value
-      }
-    ]
-    //e.elements = [...e.elements, propertyElement];
-    return propertyElement;
-  }
-};
-const processAttribute = {
-  E2D: (e, attr) => {
-    if(e.attributes && e.attributes[attr]){
-      e[attr] = e.attributes[attr];
-      delete e.attributes[attr];
-    }
-  }, D2E: (e, attr) => { 
-    if(e[attr]){
-      e.attributes[attr] = e[attr];
-      delete e[attr];
-    }
-  }
-};
-const processAttributes = {
-  E2D: (e, attrs) => 
-    attrs.forEach( attr => processAttribute.E2D(e, attr) ),
-  D2E: (e, attrs) =>
-    attrs.forEach( attr => processAttribute.D2E(e, attr) )
-};
-const cleanKeyIfVoid = (e, key) => {
-  if(e && e[key] && Object.keys(e[key]).length == 0)
-    delete e[key]; // delete key if its void
-};
-
-const elementsTypesAttributes = {
-  entry: ['id', 'in', 'out', 'producer'],
-  producer: ['id', 'in', 'out'],
-  tractor: ['id', 'in', 'out', 'global_feed'],
-  playlist: ['id'],
-  track: ['producer', 'hide'],
-  transition: ['id'],
-  filter: ['id'],
-}
-
-const wrapper = (e) => {
-  //console.log("Element: ", e.name);
-
-  delete e.type; // | e.type = "element"
-  if(elementsTypesAttributes[e.name]) // move specific element.attributes to element (root)
-    processAttributes.E2D(e, elementsTypesAttributes[e.name]);
-
-  if(e.properties === undefined) e.properties = {};
-  if(e.elements && e.elements.length > 0){ // if element has child elements
-    e.elements.forEach( (child, index) => {
-      if(child.name === 'property')
-        processProperty.E2D(e, child, index); // just process the property
-      else
-        wrapper(child); // recurse
-    });
-    e.elements = e.elements.filter( elem => elem !== undefined); // filter empty elements
-  }
-
-  let keys2Clean = ['elements', 'attributes', 'properties']; // clean preprocesed keys if they are clean
-  keys2Clean.forEach( key => cleanKeyIfVoid(e, key) ); // the same as up
-
-}
-
-const antiwrapper = (e) => {
-  //console.log("Element: ", e.name);
-
-  let keys2Recover = ['attributes', 'properties']; // create errased keys
-  keys2Recover.forEach( key => {
-    if(e[key] == undefined) e[key] = {};
-  } ); // the same as up
-  if(e.elements === undefined) e.elements = [];
-
-  e.elements.forEach( (child, index) => {
-    e.elements[index] = antiwrapper(child) // recurse
-  });
-
-  if(e.properties){
-    let propElements = [];
-    Object.keys(e.properties).forEach( (key) => {
-      let propE = processProperty.D2E(e, key) // just process the property
-      propElements.push(propE);
-     })
-    e.elements = [...propElements, ...e.elements];
-    delete e.properties // delete "properties" key
-  }
-
-  if(elementsTypesAttributes[e.name]) // move specific element.attributes to element (root)
-  processAttributes.D2E(e, elementsTypesAttributes[e.name]);
-  
-  if(e.elements.length == 0) delete e.elements;
-
-  let t = {
-    type: 'element',
-    name: e.name,
-  }
-  if(e.attributes) t.attributes = e.attributes
-  if(e.elements) t.elements = e.elements
-  return t;
-}
-
-const process = {
-  // js.elements[0] is the "mlt" on xml element
-  E2D: (js) => {
-    wrapper(js.elements[0]);
-    return js;
-  },
-  D2E: (js) => {
-    js.elements[0] = antiwrapper(js.elements[0]);
-    return js;
-  }
-}
+const processA = require('./processA');
+const write = (file, data) => fs.writeFileSync( file, JSON.stringify(data, null, 2));
 
 var xml = fs.readFileSync('./test.kdenlive');
-
-// KdenliveXML to prettyfied json
 var js = convert.xml2js(xml, {compact: false, spaces: 2});
-console.log(js)
-js = process.E2D(js);
-//fs.writeFileSync('./K.8.json', JSON.stringify(js, null, 2));
-js.elements[0].elements[1].properties.resource = "ubicación/mi video lol.mp4";
-js.elements[0].elements[1].in = "00:15:00.000";
+// js extended
 
-// Prettyfied json to KdenliveXML
-//var js = JSON.parse(fs.readFileSync('./K.8.json'));
-js = process.D2E(js);
-fs.writeFileSync('./K.1.json', JSON.stringify(js, null, 2));
+js = processA.compact(js);
+write('./K.8.json', js);
+// js compact 
+// able to do modifications
+// [...]
+
+js = processA.extend(js);
+write('./K.1.json', js);
+// js extended again

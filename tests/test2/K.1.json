@@ -38,7 +38,7 @@
           "name": "producer",
           "attributes": {
             "id": "producer0",
-            "in": "00:15:00.000",
+            "in": "00:00:00.000",
             "out": "00:13:03.000"
           },
           "elements": [
@@ -77,7 +77,7 @@
               "elements": [
                 {
                   "type": "text",
-                  "text": "ubicación/mi video lol.mp4"
+                  "text": "C:/Users/Jorge Arreola/Videos/videooooooo.mkv"
                 }
               ]
             },
