@@ -1,0 +1,3576 @@
+{
+  "declaration": {
+    "attributes": {
+      "version": "1.0",
+      "encoding": "utf-8"
+    }
+  },
+  "elements": [
+    {
+      "type": "element",
+      "name": "mlt",
+      "attributes": {
+        "LC_NUMERIC": "es_MX",
+        "producer": "main_bin",
+        "version": "6.23.0",
+        "root": "C:/ARREOLA/Projects/KdenliveAPI/tests/test3"
+      },
+      "elements": [
+        {
+          "type": "element",
+          "name": "profile",
+          "attributes": {
+            "frame_rate_num": "30",
+            "sample_aspect_num": "1",
+            "display_aspect_den": "768",
+            "colorspace": "709",
+            "progressive": "1",
+            "description": "1368x768 30.00fps",
+            "display_aspect_num": "1364",
+            "frame_rate_den": "1",
+            "width": "1368",
+            "height": "768",
+            "sample_aspect_den": "1"
+          }
+        },
+        {
+          "type": "element",
+          "name": "producer",
+          "attributes": {
+            "id": "producer0",
+            "in": "00:00:00.000",
+            "out": "00:13:03.000"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "length"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "23491"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "eof"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "pause"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "resource"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "C:/Users/Jorge Arreola/Videos/videooooooo.mkv"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "audio_index"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "video_index"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "0"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "mute_on_pause"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "0"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "mlt_service"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "avformat-novalidate"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "seekable"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "aspect_ratio"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:clipname"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "genial"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:folderid"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "-1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:id"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "2"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:file_size"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "27493394"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:file_hash"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "9edd077085e6d86321b537f57119057c"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "global_feed"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.nb_streams"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "2"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.0.stream.type"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "video"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.0.stream.frame_rate"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "30"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.0.stream.sample_aspect_ratio"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "0"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.0.codec.width"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1364"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.0.codec.height"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "768"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.0.codec.rotate"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "0"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.0.codec.frame_rate"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "30"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.0.codec.pix_fmt"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "yuv420p"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.0.codec.sample_aspect_ratio"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "0"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.0.codec.colorspace"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "709"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.0.codec.name"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "h264"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.0.codec.long_name"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.0.codec.bit_rate"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "0"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.attr.0.stream.DURATION.markup"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "00:13:03.033000000"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.1.stream.type"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "audio"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.1.codec.sample_fmt"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "fltp"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.1.codec.sample_rate"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "44100"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.1.codec.channels"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "2"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.1.codec.name"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "aac"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.1.codec.long_name"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "AAC (Advanced Audio Coding)"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.1.codec.bit_rate"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "0"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.attr.1.stream.title.markup"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "simple_aac_recording"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.attr.1.stream.DURATION.markup"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "00:13:02.954000000"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.attr.ENCODER.markup"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "Lavf58.29.100"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.sample_aspect_num"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.sample_aspect_den"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.frame_rate_num"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "30"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.frame_rate_den"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.colorspace"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "709"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.color_trc"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "2"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.width"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1364"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.height"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "768"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.color_range"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "mpeg"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.top_field_first"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "0"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.progressive"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "playlist",
+          "attributes": {
+            "id": "main_bin"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:docproperties.activeTrack"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "0"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:docproperties.audioChannels"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "2"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:docproperties.audioTarget"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "0"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:docproperties.disablepreview"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "0"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:docproperties.documentid"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1603402929383"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:docproperties.enableTimelineZone"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "0"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:docproperties.enableexternalproxy"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "0"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:docproperties.enableproxy"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "0"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:docproperties.externalproxyparams"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "../Sub;;S03.MP4;../Clip;;.MXF"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:docproperties.generateimageproxy"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "0"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:docproperties.generateproxy"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "0"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:docproperties.groups"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "[\r\n    {\r\n        \"children\": [\r\n            {\r\n                \"data\": \"1:0\",\r\n                \"leaf\": \"clip\",\r\n                \"type\": \"Leaf\"\r\n            },\r\n            {\r\n                \"data\": \"0:0\",\r\n                \"leaf\": \"clip\",\r\n                \"type\": \"Leaf\"\r\n            }\r\n        ],\r\n        \"type\": \"AVSplit\"\r\n    }\r\n]\r\n"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:docproperties.kdenliveversion"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "20.08.0"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:docproperties.position"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "481"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:docproperties.previewextension"
+              }
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:docproperties.previewparameters"
+              }
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:docproperties.profile"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "C:/Users/Jorge Arreola/AppData/Roaming/kdenlive/profiles/customprofile0"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:docproperties.proxyextension"
+              }
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:docproperties.proxyimageminsize"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "2000"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:docproperties.proxyimagesize"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "800"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:docproperties.proxyminsize"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1000"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:docproperties.proxyparams"
+              }
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:docproperties.scrollPos"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "0"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:docproperties.seekOffset"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "30000"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:docproperties.version"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:docproperties.verticalzoom"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:docproperties.videoTarget"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:docproperties.zonein"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "0"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:docproperties.zoneout"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "75"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:docproperties.zoom"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "16"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:expandedFolders"
+              }
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:documentnotes"
+              }
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "xml_retain"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "entry",
+              "attributes": {
+                "in": "00:00:00.000",
+                "out": "00:13:03.000",
+                "producer": "producer0"
+              }
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "producer",
+          "attributes": {
+            "id": "black_track",
+            "in": "00:00:00.000",
+            "out": "00:29:43.033"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "length"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "2147483647"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "eof"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "continue"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "resource"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "black"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "aspect_ratio"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "mlt_service"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "color"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "mlt_image_format"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "rgb24a"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "set.test_audio"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "0"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "producer",
+          "attributes": {
+            "id": "producer1",
+            "in": "00:00:00.000",
+            "out": "00:13:03.000"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "length"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "23491"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "eof"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "pause"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "resource"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "C:/Users/Jorge Arreola/Videos/videooooooo.mkv"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "audio_index"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "video_index"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "0"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "mute_on_pause"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "0"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "mlt_service"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "avformat-novalidate"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "seekable"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "aspect_ratio"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:clipname"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "XD"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:folderid"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "-1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:id"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "2"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:file_size"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "27493394"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:file_hash"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "9edd077085e6d86321b537f57119057c"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "global_feed"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "xml"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "was here"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.nb_streams"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "2"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.0.stream.type"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "video"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.0.stream.frame_rate"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "30"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.0.stream.sample_aspect_ratio"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "0"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.0.codec.width"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1364"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.0.codec.height"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "768"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.0.codec.rotate"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "0"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.0.codec.frame_rate"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "30"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.0.codec.pix_fmt"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "yuv420p"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.0.codec.sample_aspect_ratio"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "0"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.0.codec.colorspace"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "709"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.0.codec.name"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "h264"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.0.codec.long_name"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.0.codec.bit_rate"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "0"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.attr.0.stream.DURATION.markup"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "00:13:03.033000000"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.1.stream.type"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "audio"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.1.codec.sample_fmt"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "fltp"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.1.codec.sample_rate"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "44100"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.1.codec.channels"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "2"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.1.codec.name"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "aac"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.1.codec.long_name"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "AAC (Advanced Audio Coding)"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.1.codec.bit_rate"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "0"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.attr.1.stream.title.markup"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "simple_aac_recording"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.attr.1.stream.DURATION.markup"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "00:13:02.954000000"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.attr.ENCODER.markup"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "Lavf58.29.100"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.sample_aspect_num"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.sample_aspect_den"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.frame_rate_num"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "30"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.frame_rate_den"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.colorspace"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "709"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.color_trc"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "2"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.width"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1364"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.height"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "768"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.color_range"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "mpeg"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.top_field_first"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "0"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.progressive"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "set.test_audio"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "0"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "set.test_image"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "playlist",
+          "attributes": {
+            "id": "playlist0"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:audio_track"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "entry",
+              "attributes": {
+                "in": "00:00:00.000",
+                "out": "00:13:03.000",
+                "producer": "producer1"
+              },
+              "elements": [
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "kdenlive:id"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "2"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "filter",
+              "attributes": {
+                "id": "filter0"
+              },
+              "elements": [
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "window"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "75"
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "max_gain"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "20dB"
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "mlt_service"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "volume"
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "internal_added"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "237"
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "disable"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "filter",
+              "attributes": {
+                "id": "filter1"
+              },
+              "elements": [
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "channel"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "-1"
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "mlt_service"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "panner"
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "internal_added"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "237"
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "start"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "0.5"
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "disable"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "playlist",
+          "attributes": {
+            "id": "playlist1"
+          }
+        },
+        {
+          "type": "element",
+          "name": "tractor",
+          "attributes": {
+            "id": "tractor0",
+            "in": "00:00:00.000",
+            "out": "00:13:03.000"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:audio_track"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:trackheight"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "67"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:collapsed"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "28"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:thumbs_format"
+              }
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:audio_rec"
+              }
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:timeline_active"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "track",
+              "attributes": {
+                "producer": "playlist0",
+                "hide": "video"
+              }
+            },
+            {
+              "type": "element",
+              "name": "track",
+              "attributes": {
+                "producer": "playlist1",
+                "hide": "both"
+              }
+            },
+            {
+              "type": "element",
+              "name": "filter",
+              "attributes": {
+                "id": "filter2"
+              },
+              "elements": [
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "iec_scale"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "0"
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "mlt_service"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "audiolevel"
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "disable"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "producer",
+          "attributes": {
+            "id": "producer2",
+            "in": "00:00:00.000",
+            "out": "00:13:03.000"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "length"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "23491"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "eof"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "pause"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "resource"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "C:/Users/Jorge Arreola/Videos/videooooooo.mkv"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "audio_index"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "video_index"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "0"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "mute_on_pause"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "0"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "mlt_service"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "avformat-novalidate"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "seekable"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "aspect_ratio"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:clipname"
+              }
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:folderid"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "-1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:id"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "2"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:file_size"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "27493394"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:file_hash"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "9edd077085e6d86321b537f57119057c"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "global_feed"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "xml"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "was here"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.nb_streams"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "2"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.0.stream.type"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "video"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.0.stream.frame_rate"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "30"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.0.stream.sample_aspect_ratio"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "0"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.0.codec.width"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1364"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.0.codec.height"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "768"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.0.codec.rotate"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "0"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.0.codec.frame_rate"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "30"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.0.codec.pix_fmt"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "yuv420p"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.0.codec.sample_aspect_ratio"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "0"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.0.codec.colorspace"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "709"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.0.codec.name"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "h264"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.0.codec.long_name"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.0.codec.bit_rate"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "0"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.attr.0.stream.DURATION.markup"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "00:13:03.033000000"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.1.stream.type"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "audio"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.1.codec.sample_fmt"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "fltp"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.1.codec.sample_rate"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "44100"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.1.codec.channels"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "2"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.1.codec.name"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "aac"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.1.codec.long_name"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "AAC (Advanced Audio Coding)"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.1.codec.bit_rate"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "0"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.attr.1.stream.title.markup"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "simple_aac_recording"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.attr.1.stream.DURATION.markup"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "00:13:02.954000000"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.attr.ENCODER.markup"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "Lavf58.29.100"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.sample_aspect_num"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.sample_aspect_den"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.frame_rate_num"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "30"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.frame_rate_den"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.colorspace"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "709"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.color_trc"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "2"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.width"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1364"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.height"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "768"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.color_range"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "mpeg"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.top_field_first"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "0"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "meta.media.progressive"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "set.test_audio"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "set.test_image"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "0"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "playlist",
+          "attributes": {
+            "id": "playlist2"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "entry",
+              "attributes": {
+                "in": "00:00:00.000",
+                "out": "00:13:03.000",
+                "producer": "producer2"
+              },
+              "elements": [
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "kdenlive:id"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "2"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "playlist",
+          "attributes": {
+            "id": "playlist3"
+          }
+        },
+        {
+          "type": "element",
+          "name": "tractor",
+          "attributes": {
+            "id": "tractor1",
+            "in": "00:00:00.000",
+            "out": "00:13:03.000"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:trackheight"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "67"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:collapsed"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "28"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:thumbs_format"
+              }
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:audio_rec"
+              }
+            },
+            {
+              "type": "element",
+              "name": "property",
+              "attributes": {
+                "name": "kdenlive:timeline_active"
+              },
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "track",
+              "attributes": {
+                "producer": "playlist2",
+                "hide": "audio"
+              }
+            },
+            {
+              "type": "element",
+              "name": "track",
+              "attributes": {
+                "producer": "playlist3",
+                "hide": "both"
+              }
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "tractor",
+          "attributes": {
+            "id": "tractor2",
+            "in": "00:00:00.000",
+            "out": "00:29:43.033",
+            "global_feed": "1"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "track",
+              "attributes": {
+                "producer": "black_track"
+              }
+            },
+            {
+              "type": "element",
+              "name": "track",
+              "attributes": {
+                "producer": "tractor0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "track",
+              "attributes": {
+                "producer": "tractor1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "transition",
+              "attributes": {
+                "id": "transition0"
+              },
+              "elements": [
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "a_track"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "0"
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "b_track"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "1"
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "mlt_service"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "mix"
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "kdenlive_id"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "mix"
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "internal_added"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "237"
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "always_active"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "1"
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "sum"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "transition",
+              "attributes": {
+                "id": "transition1"
+              },
+              "elements": [
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "a_track"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "0"
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "b_track"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "2"
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "compositing"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "0"
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "distort"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "0"
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "rotate_center"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "0"
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "mlt_service"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "qtblend"
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "kdenlive_id"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "qtblend"
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "internal_added"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "237"
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "always_active"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "filter",
+              "attributes": {
+                "id": "filter3"
+              },
+              "elements": [
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "window"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "75"
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "max_gain"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "20dB"
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "level"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "5.02471"
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "mlt_service"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "volume"
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "internal_added"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "237"
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "disable"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "filter",
+              "attributes": {
+                "id": "filter4"
+              },
+              "elements": [
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "channel"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "-1"
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "mlt_service"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "panner"
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "internal_added"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "237"
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "start"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "0.5"
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "disable"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "filter",
+              "attributes": {
+                "id": "filter5"
+              },
+              "elements": [
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "iec_scale"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "0"
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "mlt_service"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "audiolevel"
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "name": "property",
+                  "attributes": {
+                    "name": "disable"
+                  },
+                  "elements": [
+                    {
+                      "type": "text",
+                      "text": "1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

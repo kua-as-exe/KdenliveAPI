@@ -123,13 +123,13 @@ const antiwrapper = (e) => {
   return t;
 }
 
-export const processA = {
+module.exports = processA = {
   // js.elements[0] is the "mlt" on xml element
-  E2D: (js) => {
+  compact: (js) => {
     wrapper(js.elements[0]);
     return js;
   },
-  D2E: (js) => {
+  extend: (js) => {
     js.elements[0] = antiwrapper(js.elements[0]);
     return js;
   }

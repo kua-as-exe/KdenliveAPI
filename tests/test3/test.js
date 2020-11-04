@@ -1,33 +1,23 @@
 var convert = require('xml-js');
 var fs = require('fs');
 
+const processA = require('./processA');
+const processB = require('./processB');
 const write = (file, data) => fs.writeFileSync( file, JSON.stringify(data, null, 2));
 
 var xml = fs.readFileSync('./test.kdenlive');
 var js = convert.xml2js(xml, {compact: false, spaces: 2});
+// js extended
 
+js = processA.compact(js);
+write('./K.a.json', js);
 
-import {processA} from './processA';
+js = processB.compact(js);
+write('./K.b.json', js);
 
-js = processA.E2D(js);
-write('./K.8.json', js);
+js = processB.extend(js);
+write('./K.c.json', js);
 
-js = 
-const customWrapper = (e) => {
-
-  let tagsToDelete = ['properties', 'attributes', 'in', 'out'];
-  tagsToDelete.forEach( tag => delete e[tag]);
-
-  if(e.elements && e.elements.length > 0){ // if element has child elements
-    e.elements.forEach( (child, index) => {
-      customWrapper(child); // recurse
-    });
-  }
-}
-customWrapper(js2.elements[0]);
-
-fs.writeFileSync('./K.9.json', JSON.stringify(js2, null, 2));
-
-
-js = processA.D2E(js);
-fs.writeFileSync('./K.1.json', JSON.stringify(js, null, 2));
+js = processA.extend(js);
+write('./K.d.json', js);
+// js extended again

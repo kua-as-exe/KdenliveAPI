@@ -1,71 +1,68 @@
-// I need to do this stuff from scratch
-// but im ready csm
+var convert = require('xml-js');
 
-const wrapper = (e) => {
+const specificElements = {
+  entry: 'entries' ,
+  track: 'tracks',
+  transition: 'transitions',
+  filter: 'filters'
+}
 
-  if(elementsTypesAttributes[e.name]) // move specific element.attributes to element (root)
-    processAttributes.E2D(e, elementsTypesAttributes[e.name]);
+const compact = (e) => {
+  function processSpecificElement(child, index){
+    let key = specificElements[child.name];
+    delete child.name;
+    if(e[key] === undefined) e[key] = [];
+    e[key].push(child);
+    delete index;
+  }
+  // ---
 
-  if(e.properties === undefined) e.properties = {};
-  if(e.elements && e.elements.length > 0){ // if element has child elements
-    e.elements.forEach( (child, index) => {
-      if(child.name === 'property')
-        processProperty.E2D(e, child, index); // just process the property
+  if(e.elements){
+    e.elements.forEach( (child, index) =>{
+      if(specificElements[child.name])
+        processSpecificElement(child, index);
       else
-        wrapper(child); // recurse
+        e.elements[index] = compact(child);
     });
-    e.elements = e.elements.filter( elem => elem !== undefined); // filter empty elements
   }
-
-  let keys2Clean = ['elements', 'attributes', 'properties']; // clean preprocesed keys if they are clean
-  keys2Clean.forEach( key => cleanKeyIfVoid(e, key) ); // the same as up
-
+    
+  return e;
 }
 
-const antiwrapper = (e) => {
+const extend = (e) => {
 
-  let keys2Recover = ['attributes', 'properties']; // create errased keys
-  keys2Recover.forEach( key => {
-    if(e[key] == undefined) e[key] = {};
-  } ); // the same as up
   if(e.elements === undefined) e.elements = [];
+  let specificElementsArray = [];
+  Object.keys(specificElements).forEach( specificKey => {
+    let key = specificElements[specificKey];
+    if(e[key]){
+      e[key].forEach( (child, index) => {
+        child.name = specificKey;
+        specificElementsArray.push(child);
+      })
+      delete e[key];
+    }
+  })
+  e.elements = [specificElements, ...e.elements];
+  // wtf with all the "SPECIFIC", it mess
+  // sorry man, its 11:15pm and I dont have another idea.
 
-  e.elements.forEach( (child, index) => {
-    e.elements[index] = antiwrapper(child) // recurse
-  });
-
-  if(e.properties){
-    let propElements = [];
-    Object.keys(e.properties).forEach( (key) => {
-      let propE = processProperty.D2E(e, key) // just process the property
-      propElements.push(propE);
-     })
-    e.elements = [...propElements, ...e.elements];
-    delete e.properties // delete "properties" key
+  if(e.elements){
+    e.elements.forEach( (child, index) => 
+      e.elements[index] = extend(child)
+    );
   }
-
-  if(elementsTypesAttributes[e.name]) // move specific element.attributes to element (root)
-  processAttributes.D2E(e, elementsTypesAttributes[e.name]);
-  
-  if(e.elements.length == 0) delete e.elements;
-
-  let t = {
-    type: 'element',
-    name: e.name,
-  }
-  if(e.attributes) t.attributes = e.attributes
-  if(e.elements) t.elements = e.elements
-  return t;
+  return e;
 }
 
-export const processB = {
+module.exports = {
   // js.elements[0] is the "mlt" on xml element
-  E2D: (js) => {
-    wrapper(js.elements[0]);
+  compact: (js) => {
+    js.elements[0] = compact(js.elements[0]);
     return js;
   },
-  D2E: (js) => {
-    js.elements[0] = antiwrapper(js.elements[0]);
+  extend: (js) => {
+    js.elements[0] = extend(js.elements[0]);
     return js;
   }
 }
