@@ -39,7 +39,7 @@
           "properties": {
             "length": "23491",
             "eof": "pause",
-            "resource": "C:/Users/Jorge Arreola/Videos/videooooooo.mkv",
+            "resource": "C:/Users/Jorge Arreola/Videos/VARIABLES1.mkv",
             "audio_index": "1",
             "video_index": "0",
             "mute_on_pause": "0",
@@ -159,7 +159,7 @@
           "properties": {
             "length": "23491",
             "eof": "pause",
-            "resource": "C:/Users/Jorge Arreola/Videos/videooooooo.mkv",
+            "resource": "C:/Users/Jorge Arreola/Videos/VARIABLES1.mkv",
             "audio_index": "1",
             "video_index": "0",
             "mute_on_pause": "0",
@@ -298,7 +298,7 @@
           "properties": {
             "length": "23491",
             "eof": "pause",
-            "resource": "C:/Users/Jorge Arreola/Videos/videooooooo.mkv",
+            "resource": "C:/Users/Jorge Arreola/Videos/VARIABLES1.mkv",
             "audio_index": "1",
             "video_index": "0",
             "mute_on_pause": "0",
@@ -444,7 +444,7 @@
               "properties": {
                 "window": "75",
                 "max_gain": "20dB",
-                "level": "5.02471",
+                "level": "0.220",
                 "mlt_service": "volume",
                 "internal_added": "237",
                 "disable": "0"
