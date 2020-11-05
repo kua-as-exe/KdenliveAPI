@@ -1,19 +1,68 @@
+const extractElements = (e, list) => {
+  e.elements.forEach( (child, index) => {
+    if(list[child.name]){
+      let key = list[child.name];
+      delete child.name;
+      if(e[key] === undefined) e[key] = [];
+      e[key].push(child);
+      delete e.elements[index];
+    }
+  })
+  if(e.elements)
+    e.elements = e.elements.filter( elem => elem !== undefined); // filter empty elements
+  if(e.elements.length == 0) delete e.elements;
+  return e;
+}
+const insertElements = (e, list) => {
+    let t = {
+      name,
+      ...child
+    }
+    e.elements.push(t);
+  
+    Object.keys(list).forEach( specificKey => {
+      let key = list[specificKey];
+      if(e[key]){
+        e[key].forEach( (child) => {
+          pushElement({
+            name: specificKey,
+            ...child
+          });
+        })
+        delete e[key];
+      }
+    })
 
-const compact = (mltjs) => {
-  mltjs.profile = mlt.elements[0].attributes;
+}
+
+const list = {
+  producer: 'producers' ,
+  playlist: 'playlists',
+  tractor: 'tractors'
+}
+
+const compact = (mlt) => {
+  // PROFILE elements[0]
+  mlt.profile = mlt.elements[0].attributes;
   delete mlt.elements[0];
 
+  mlt = extractElements(mlt, list)
+
+  // GLOBAL PRODUCERS elements[1, ...(id:"main_bin")]
   
-  e.elements = e.elements.filter( elem => elem !== undefined); // filter empty elements
-  return mltjs;
+  //mlt.elements = mlt.elements.filter( elem => elem !== undefined); // filter empty elements
+  return mlt;
 }
 
 const extend = (mlt) => {
+  if(mlt.elements === undefined) mlt.elements = [];
   let profileElement = {
     "name": "profile",
-    "attributes": mlt
+    "attributes": mlt.profile
   }
   mlt.elements = [profileElement, ...mlt.elements];
+  
+  mlt = insertElements(mlt, list);
   
   return mlt;
 }

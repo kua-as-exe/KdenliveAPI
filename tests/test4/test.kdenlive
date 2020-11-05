@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <mlt LC_NUMERIC="es_MX" producer="main_bin" version="6.23.0" root="C:/ARREOLA/Projects/KdenliveAPI/tests/test2">
- <profile frame_rate_num="30" sample_aspect_num="1" display_aspect_den="768" colorspace="709" progressive="1" description="1368x768 30.00fps" display_aspect_num="1364" frame_rate_den="1" width="1368" height="768" sample_aspect_den="1"/>
+ <profile frame_rate_num="35" sample_aspect_num="1" display_aspect_den="768" colorspace="709" progressive="1" description="1368x768 35.00fps" display_aspect_num="1364" frame_rate_den="1" width="1368" height="768" sample_aspect_den="1"/>
  <producer id="producer0" in="00:00:00.000" out="00:13:03.000">
   <property name="length">23491</property>
   <property name="eof">pause</property>

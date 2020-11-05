@@ -5,25 +5,21 @@
     "version": "6.23.0",
     "root": "C:/ARREOLA/Projects/KdenliveAPI/tests/test2"
   },
-  "elements": [
+  "profile": {
+    "frame_rate_num": "30",
+    "sample_aspect_num": "1",
+    "display_aspect_den": "768",
+    "colorspace": "709",
+    "progressive": "1",
+    "description": "1368x768 30.00fps",
+    "display_aspect_num": "1364",
+    "frame_rate_den": "1",
+    "width": "1368",
+    "height": "768",
+    "sample_aspect_den": "1"
+  },
+  "producers": [
     {
-      "name": "profile",
-      "attributes": {
-        "frame_rate_num": "30",
-        "sample_aspect_num": "1",
-        "display_aspect_den": "768",
-        "colorspace": "709",
-        "progressive": "1",
-        "description": "1368x768 30.00fps",
-        "display_aspect_num": "1364",
-        "frame_rate_den": "1",
-        "width": "1368",
-        "height": "768",
-        "sample_aspect_den": "1"
-      }
-    },
-    {
-      "name": "producer",
       "id": "producer0",
       "in": "00:00:00.000",
       "out": "00:13:03.000",
@@ -82,53 +78,6 @@
       }
     },
     {
-      "name": "playlist",
-      "id": "main_bin",
-      "properties": {
-        "kdenlive:docproperties.activeTrack": "0",
-        "kdenlive:docproperties.audioChannels": "2",
-        "kdenlive:docproperties.audioTarget": "-1",
-        "kdenlive:docproperties.disablepreview": "0",
-        "kdenlive:docproperties.documentid": "1603402929383",
-        "kdenlive:docproperties.enableTimelineZone": "0",
-        "kdenlive:docproperties.enableexternalproxy": "0",
-        "kdenlive:docproperties.enableproxy": "0",
-        "kdenlive:docproperties.externalproxyparams": "../Sub;;S03.MP4;../Clip;;.MXF",
-        "kdenlive:docproperties.generateimageproxy": "0",
-        "kdenlive:docproperties.generateproxy": "0",
-        "kdenlive:docproperties.groups": "[\r\n    {\r\n        \"children\": [\r\n            {\r\n                \"data\": \"1:0\",\r\n                \"leaf\": \"clip\",\r\n                \"type\": \"Leaf\"\r\n            },\r\n            {\r\n                \"data\": \"0:0\",\r\n                \"leaf\": \"clip\",\r\n                \"type\": \"Leaf\"\r\n            }\r\n        ],\r\n        \"type\": \"AVSplit\"\r\n    }\r\n]\r\n",
-        "kdenlive:docproperties.kdenliveversion": "20.08.0",
-        "kdenlive:docproperties.position": "481",
-        "kdenlive:docproperties.previewextension": "",
-        "kdenlive:docproperties.previewparameters": "",
-        "kdenlive:docproperties.profile": "C:/Users/Jorge Arreola/AppData/Roaming/kdenlive/profiles/customprofile0",
-        "kdenlive:docproperties.proxyextension": "",
-        "kdenlive:docproperties.proxyimageminsize": "2000",
-        "kdenlive:docproperties.proxyimagesize": "800",
-        "kdenlive:docproperties.proxyminsize": "1000",
-        "kdenlive:docproperties.proxyparams": "",
-        "kdenlive:docproperties.scrollPos": "0",
-        "kdenlive:docproperties.seekOffset": "30000",
-        "kdenlive:docproperties.version": "1",
-        "kdenlive:docproperties.verticalzoom": "1",
-        "kdenlive:docproperties.videoTarget": "-1",
-        "kdenlive:docproperties.zonein": "0",
-        "kdenlive:docproperties.zoneout": "75",
-        "kdenlive:docproperties.zoom": "16",
-        "kdenlive:expandedFolders": "",
-        "kdenlive:documentnotes": "",
-        "xml_retain": "1"
-      },
-      "entries": [
-        {
-          "in": "00:00:00.000",
-          "out": "00:13:03.000",
-          "producer": "producer0"
-        }
-      ]
-    },
-    {
-      "name": "producer",
       "id": "black_track",
       "in": "00:00:00.000",
       "out": "00:29:43.033",
@@ -143,7 +92,6 @@
       }
     },
     {
-      "name": "producer",
       "id": "producer1",
       "in": "00:00:00.000",
       "out": "00:13:03.000",
@@ -205,84 +153,6 @@
       }
     },
     {
-      "name": "playlist",
-      "id": "playlist0",
-      "properties": {
-        "kdenlive:audio_track": "1"
-      },
-      "entries": [
-        {
-          "in": "00:00:00.000",
-          "out": "00:13:03.000",
-          "producer": "producer1",
-          "properties": {
-            "kdenlive:id": "3"
-          }
-        }
-      ],
-      "filters": [
-        {
-          "id": "filter0",
-          "properties": {
-            "window": "75",
-            "max_gain": "20dB",
-            "mlt_service": "volume",
-            "internal_added": "237",
-            "disable": "1"
-          }
-        },
-        {
-          "id": "filter1",
-          "properties": {
-            "channel": "-1",
-            "mlt_service": "panner",
-            "internal_added": "237",
-            "start": "0.5",
-            "disable": "1"
-          }
-        }
-      ]
-    },
-    {
-      "name": "playlist",
-      "id": "playlist1"
-    },
-    {
-      "name": "tractor",
-      "id": "tractor0",
-      "in": "00:00:00.000",
-      "out": "00:13:03.000",
-      "properties": {
-        "kdenlive:audio_track": "1",
-        "kdenlive:trackheight": "67",
-        "kdenlive:collapsed": "28",
-        "kdenlive:thumbs_format": "",
-        "kdenlive:audio_rec": "",
-        "kdenlive:timeline_active": "1"
-      },
-      "tracks": [
-        {
-          "producer": "playlist0",
-          "hide": "video"
-        },
-        {
-          "producer": "playlist1",
-          "hide": "both"
-        }
-      ],
-      "filters": [
-        {
-          "id": "filter2",
-          "properties": {
-            "iec_scale": "0",
-            "mlt_service": "audiolevel",
-            "disable": "1"
-          }
-        }
-      ]
-    },
-    {
-      "name": "producer",
       "id": "producer2",
       "in": "00:00:00.000",
       "out": "00:13:03.000",
@@ -342,9 +212,96 @@
         "set.test_audio": "1",
         "set.test_image": "0"
       }
+    }
+  ],
+  "playlists": [
+    {
+      "id": "main_bin",
+      "properties": {
+        "kdenlive:docproperties.activeTrack": "0",
+        "kdenlive:docproperties.audioChannels": "2",
+        "kdenlive:docproperties.audioTarget": "-1",
+        "kdenlive:docproperties.disablepreview": "0",
+        "kdenlive:docproperties.documentid": "1603402929383",
+        "kdenlive:docproperties.enableTimelineZone": "0",
+        "kdenlive:docproperties.enableexternalproxy": "0",
+        "kdenlive:docproperties.enableproxy": "0",
+        "kdenlive:docproperties.externalproxyparams": "../Sub;;S03.MP4;../Clip;;.MXF",
+        "kdenlive:docproperties.generateimageproxy": "0",
+        "kdenlive:docproperties.generateproxy": "0",
+        "kdenlive:docproperties.groups": "[\r\n    {\r\n        \"children\": [\r\n            {\r\n                \"data\": \"1:0\",\r\n                \"leaf\": \"clip\",\r\n                \"type\": \"Leaf\"\r\n            },\r\n            {\r\n                \"data\": \"0:0\",\r\n                \"leaf\": \"clip\",\r\n                \"type\": \"Leaf\"\r\n            }\r\n        ],\r\n        \"type\": \"AVSplit\"\r\n    }\r\n]\r\n",
+        "kdenlive:docproperties.kdenliveversion": "20.08.0",
+        "kdenlive:docproperties.position": "481",
+        "kdenlive:docproperties.previewextension": "",
+        "kdenlive:docproperties.previewparameters": "",
+        "kdenlive:docproperties.profile": "C:/Users/Jorge Arreola/AppData/Roaming/kdenlive/profiles/customprofile0",
+        "kdenlive:docproperties.proxyextension": "",
+        "kdenlive:docproperties.proxyimageminsize": "2000",
+        "kdenlive:docproperties.proxyimagesize": "800",
+        "kdenlive:docproperties.proxyminsize": "1000",
+        "kdenlive:docproperties.proxyparams": "",
+        "kdenlive:docproperties.scrollPos": "0",
+        "kdenlive:docproperties.seekOffset": "30000",
+        "kdenlive:docproperties.version": "1",
+        "kdenlive:docproperties.verticalzoom": "1",
+        "kdenlive:docproperties.videoTarget": "-1",
+        "kdenlive:docproperties.zonein": "0",
+        "kdenlive:docproperties.zoneout": "75",
+        "kdenlive:docproperties.zoom": "16",
+        "kdenlive:expandedFolders": "",
+        "kdenlive:documentnotes": "",
+        "xml_retain": "1"
+      },
+      "entries": [
+        {
+          "in": "00:00:00.000",
+          "out": "00:13:03.000",
+          "producer": "producer0"
+        }
+      ]
     },
     {
-      "name": "playlist",
+      "id": "playlist0",
+      "properties": {
+        "kdenlive:audio_track": "1"
+      },
+      "entries": [
+        {
+          "in": "00:00:00.000",
+          "out": "00:13:03.000",
+          "producer": "producer1",
+          "properties": {
+            "kdenlive:id": "3"
+          }
+        }
+      ],
+      "filters": [
+        {
+          "id": "filter0",
+          "properties": {
+            "window": "75",
+            "max_gain": "20dB",
+            "mlt_service": "volume",
+            "internal_added": "237",
+            "disable": "1"
+          }
+        },
+        {
+          "id": "filter1",
+          "properties": {
+            "channel": "-1",
+            "mlt_service": "panner",
+            "internal_added": "237",
+            "start": "0.5",
+            "disable": "1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "playlist1"
+    },
+    {
       "id": "playlist2",
       "entries": [
         {
@@ -358,11 +315,44 @@
       ]
     },
     {
-      "name": "playlist",
       "id": "playlist3"
+    }
+  ],
+  "tractors": [
+    {
+      "id": "tractor0",
+      "in": "00:00:00.000",
+      "out": "00:13:03.000",
+      "properties": {
+        "kdenlive:audio_track": "1",
+        "kdenlive:trackheight": "67",
+        "kdenlive:collapsed": "28",
+        "kdenlive:thumbs_format": "",
+        "kdenlive:audio_rec": "",
+        "kdenlive:timeline_active": "1"
+      },
+      "tracks": [
+        {
+          "producer": "playlist0",
+          "hide": "video"
+        },
+        {
+          "producer": "playlist1",
+          "hide": "both"
+        }
+      ],
+      "filters": [
+        {
+          "id": "filter2",
+          "properties": {
+            "iec_scale": "0",
+            "mlt_service": "audiolevel",
+            "disable": "1"
+          }
+        }
+      ]
     },
     {
-      "name": "tractor",
       "id": "tractor1",
       "in": "00:00:00.000",
       "out": "00:13:03.000",
@@ -385,7 +375,6 @@
       ]
     },
     {
-      "name": "tractor",
       "id": "tractor2",
       "in": "00:00:00.000",
       "out": "00:29:43.033",

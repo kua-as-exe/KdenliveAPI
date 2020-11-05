@@ -5,9 +5,9 @@ const processA = require('./processA');
 const processB = require('./processB');
 const processC = require('./processC');
 
-var xml = fs.readFileSync('./test.kdenlive');
+var xml = fs.readFileSync('./../test.bak.kdenlive');
 var js = convert.xml2js(xml, {spaces: 2});
-console.log("JSON", js)
+//console.log("JSON", js)
 
 js = processA.compact(js);
 js = processB.compact(js);
