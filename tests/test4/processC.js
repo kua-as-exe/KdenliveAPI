@@ -1,13 +1,21 @@
 
 const compact = (mltjs) => {
+  mltjs.profile = mlt.elements[0].attributes;
+  delete mlt.elements[0];
+
   
+  e.elements = e.elements.filter( elem => elem !== undefined); // filter empty elements
   return mltjs;
 }
 
-const extend = (mltjs) => {
-
+const extend = (mlt) => {
+  let profileElement = {
+    "name": "profile",
+    "attributes": mlt
+  }
+  mlt.elements = [profileElement, ...mlt.elements];
   
-  return mltjs;
+  return mlt;
 }
 
 module.exports = {

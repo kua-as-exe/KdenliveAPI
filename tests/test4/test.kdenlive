@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <mlt LC_NUMERIC="es_MX" producer="main_bin" version="6.23.0" root="C:/ARREOLA/Projects/KdenliveAPI/tests/test2">
  <profile frame_rate_num="30" sample_aspect_num="1" display_aspect_den="768" colorspace="709" progressive="1" description="1368x768 30.00fps" display_aspect_num="1364" frame_rate_den="1" width="1368" height="768" sample_aspect_den="1"/>
  <producer id="producer0" in="00:00:00.000" out="00:13:03.000">
@@ -105,7 +105,7 @@
   <property name="kdenlive:expandedFolders"/>
   <property name="kdenlive:documentnotes"/>
   <property name="xml_retain">1</property>
-  <entry producer="producer0" in="00:00:00.000" out="00:13:03.000"/>
+  <entry in="00:00:00.000" out="00:13:03.000" producer="producer0"/>
  </playlist>
  <producer id="black_track" in="00:00:00.000" out="00:29:43.033">
   <property name="length">2147483647</property>
@@ -174,7 +174,7 @@
  </producer>
  <playlist id="playlist0">
   <property name="kdenlive:audio_track">1</property>
-  <entry producer="producer1" in="00:00:00.000" out="00:13:03.000">
+  <entry in="00:00:00.000" out="00:13:03.000" producer="producer1">
    <property name="kdenlive:id">3</property>
   </entry>
   <filter id="filter0">
@@ -200,8 +200,8 @@
   <property name="kdenlive:thumbs_format"/>
   <property name="kdenlive:audio_rec"/>
   <property name="kdenlive:timeline_active">1</property>
-  <track hide="video" producer="playlist0"/>
-  <track hide="both" producer="playlist1"/>
+  <track producer="playlist0" hide="video"/>
+  <track producer="playlist1" hide="both"/>
   <filter id="filter2">
    <property name="iec_scale">0</property>
    <property name="mlt_service">audiolevel</property>
@@ -265,7 +265,7 @@
   <property name="set.test_image">0</property>
  </producer>
  <playlist id="playlist2">
-  <entry producer="producer2" in="00:00:00.000" out="00:13:03.000">
+  <entry in="00:00:00.000" out="00:13:03.000" producer="producer2">
    <property name="kdenlive:id">3</property>
   </entry>
  </playlist>
@@ -276,10 +276,10 @@
   <property name="kdenlive:thumbs_format"/>
   <property name="kdenlive:audio_rec"/>
   <property name="kdenlive:timeline_active">1</property>
-  <track hide="audio" producer="playlist2"/>
-  <track hide="both" producer="playlist3"/>
+  <track producer="playlist2" hide="audio"/>
+  <track producer="playlist3" hide="both"/>
  </tractor>
- <tractor id="tractor2" global_feed="1" in="00:00:00.000" out="00:29:43.033">
+ <tractor id="tractor2" in="00:00:00.000" out="00:29:43.033" global_feed="1">
   <track producer="black_track"/>
   <track producer="tractor0"/>
   <track producer="tractor1"/>
