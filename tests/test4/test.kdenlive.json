@@ -1,474 +1,463 @@
 {
-  "declaration": {
-    "attributes": {
-      "version": "1.0",
-      "encoding": "utf-8"
-    }
+  "attributes": {
+    "LC_NUMERIC": "es_MX",
+    "producer": "main_bin",
+    "version": "6.23.0",
+    "root": "C:/ARREOLA/Projects/KdenliveAPI/tests/test2"
   },
   "elements": [
     {
-      "name": "mlt",
+      "name": "profile",
       "attributes": {
-        "LC_NUMERIC": "es_MX",
-        "producer": "main_bin",
-        "version": "6.23.0",
-        "root": "C:/ARREOLA/Projects/KdenliveAPI/tests/test4"
+        "frame_rate_num": "30",
+        "sample_aspect_num": "1",
+        "display_aspect_den": "768",
+        "colorspace": "709",
+        "progressive": "1",
+        "description": "1368x768 30.00fps",
+        "display_aspect_num": "1364",
+        "frame_rate_den": "1",
+        "width": "1368",
+        "height": "768",
+        "sample_aspect_den": "1"
+      }
+    },
+    {
+      "name": "producer",
+      "id": "producer0",
+      "in": "00:00:00.000",
+      "out": "00:13:03.000",
+      "properties": {
+        "length": "23491",
+        "eof": "pause",
+        "resource": "C:/Users/Jorge Arreola/Videos/videooooooo.mkv",
+        "audio_index": "1",
+        "video_index": "0",
+        "mute_on_pause": "0",
+        "mlt_service": "avformat-novalidate",
+        "seekable": "1",
+        "aspect_ratio": "1",
+        "kdenlive:clipname": "XD",
+        "kdenlive:folderid": "-1",
+        "kdenlive:id": "3",
+        "kdenlive:file_size": "27493394",
+        "kdenlive:file_hash": "9edd077085e6d86321b537f57119057c",
+        "global_feed": "1",
+        "meta.media.nb_streams": "2",
+        "meta.media.0.stream.type": "video",
+        "meta.media.0.stream.frame_rate": "30",
+        "meta.media.0.stream.sample_aspect_ratio": "0",
+        "meta.media.0.codec.width": "1364",
+        "meta.media.0.codec.height": "768",
+        "meta.media.0.codec.rotate": "0",
+        "meta.media.0.codec.frame_rate": "30",
+        "meta.media.0.codec.pix_fmt": "yuv420p",
+        "meta.media.0.codec.sample_aspect_ratio": "0",
+        "meta.media.0.codec.colorspace": "709",
+        "meta.media.0.codec.name": "h264",
+        "meta.media.0.codec.long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "meta.media.0.codec.bit_rate": "0",
+        "meta.attr.0.stream.DURATION.markup": "00:13:03.033000000",
+        "meta.media.1.stream.type": "audio",
+        "meta.media.1.codec.sample_fmt": "fltp",
+        "meta.media.1.codec.sample_rate": "44100",
+        "meta.media.1.codec.channels": "2",
+        "meta.media.1.codec.name": "aac",
+        "meta.media.1.codec.long_name": "AAC (Advanced Audio Coding)",
+        "meta.media.1.codec.bit_rate": "0",
+        "meta.attr.1.stream.title.markup": "simple_aac_recording",
+        "meta.attr.1.stream.DURATION.markup": "00:13:02.954000000",
+        "meta.attr.ENCODER.markup": "Lavf58.29.100",
+        "meta.media.sample_aspect_num": "1",
+        "meta.media.sample_aspect_den": "1",
+        "meta.media.frame_rate_num": "30",
+        "meta.media.frame_rate_den": "1",
+        "meta.media.colorspace": "709",
+        "meta.media.color_trc": "2",
+        "meta.media.width": "1364",
+        "meta.media.height": "768",
+        "meta.media.color_range": "mpeg",
+        "meta.media.top_field_first": "0",
+        "meta.media.progressive": "1"
+      }
+    },
+    {
+      "name": "playlist",
+      "id": "main_bin",
+      "properties": {
+        "kdenlive:docproperties.activeTrack": "0",
+        "kdenlive:docproperties.audioChannels": "2",
+        "kdenlive:docproperties.audioTarget": "-1",
+        "kdenlive:docproperties.disablepreview": "0",
+        "kdenlive:docproperties.documentid": "1603402929383",
+        "kdenlive:docproperties.enableTimelineZone": "0",
+        "kdenlive:docproperties.enableexternalproxy": "0",
+        "kdenlive:docproperties.enableproxy": "0",
+        "kdenlive:docproperties.externalproxyparams": "../Sub;;S03.MP4;../Clip;;.MXF",
+        "kdenlive:docproperties.generateimageproxy": "0",
+        "kdenlive:docproperties.generateproxy": "0",
+        "kdenlive:docproperties.groups": "[\r\n    {\r\n        \"children\": [\r\n            {\r\n                \"data\": \"1:0\",\r\n                \"leaf\": \"clip\",\r\n                \"type\": \"Leaf\"\r\n            },\r\n            {\r\n                \"data\": \"0:0\",\r\n                \"leaf\": \"clip\",\r\n                \"type\": \"Leaf\"\r\n            }\r\n        ],\r\n        \"type\": \"AVSplit\"\r\n    }\r\n]\r\n",
+        "kdenlive:docproperties.kdenliveversion": "20.08.0",
+        "kdenlive:docproperties.position": "481",
+        "kdenlive:docproperties.previewextension": "",
+        "kdenlive:docproperties.previewparameters": "",
+        "kdenlive:docproperties.profile": "C:/Users/Jorge Arreola/AppData/Roaming/kdenlive/profiles/customprofile0",
+        "kdenlive:docproperties.proxyextension": "",
+        "kdenlive:docproperties.proxyimageminsize": "2000",
+        "kdenlive:docproperties.proxyimagesize": "800",
+        "kdenlive:docproperties.proxyminsize": "1000",
+        "kdenlive:docproperties.proxyparams": "",
+        "kdenlive:docproperties.scrollPos": "0",
+        "kdenlive:docproperties.seekOffset": "30000",
+        "kdenlive:docproperties.version": "1",
+        "kdenlive:docproperties.verticalzoom": "1",
+        "kdenlive:docproperties.videoTarget": "-1",
+        "kdenlive:docproperties.zonein": "0",
+        "kdenlive:docproperties.zoneout": "75",
+        "kdenlive:docproperties.zoom": "16",
+        "kdenlive:expandedFolders": "",
+        "kdenlive:documentnotes": "",
+        "xml_retain": "1"
       },
-      "elements": [
+      "entries": [
         {
-          "name": "profile",
-          "attributes": {
-            "frame_rate_num": "30",
-            "sample_aspect_num": "1",
-            "display_aspect_den": "768",
-            "colorspace": "709",
-            "progressive": "1",
-            "description": "1368x768 30.00fps",
-            "display_aspect_num": "1364",
-            "frame_rate_den": "1",
-            "width": "1368",
-            "height": "768",
-            "sample_aspect_den": "1"
-          }
-        },
-        {
-          "name": "producer",
-          "id": "producer0",
           "in": "00:00:00.000",
           "out": "00:13:03.000",
-          "properties": {
-            "length": "23491",
-            "eof": "pause",
-            "resource": "C:/Users/Jorge Arreola/Videos/VARIABLES1.mkv",
-            "audio_index": "1",
-            "video_index": "0",
-            "mute_on_pause": "0",
-            "mlt_service": "avformat-novalidate",
-            "seekable": "1",
-            "aspect_ratio": "1",
-            "kdenlive:clipname": "cool",
-            "kdenlive:folderid": "-1",
-            "kdenlive:id": "2",
-            "kdenlive:file_size": "27493394",
-            "kdenlive:file_hash": "9edd077085e6d86321b537f57119057c",
-            "global_feed": "1",
-            "meta.media.nb_streams": "2",
-            "meta.media.0.stream.type": "video",
-            "meta.media.0.stream.frame_rate": "30",
-            "meta.media.0.stream.sample_aspect_ratio": "0",
-            "meta.media.0.codec.width": "1364",
-            "meta.media.0.codec.height": "768",
-            "meta.media.0.codec.rotate": "0",
-            "meta.media.0.codec.frame_rate": "30",
-            "meta.media.0.codec.pix_fmt": "yuv420p",
-            "meta.media.0.codec.sample_aspect_ratio": "0",
-            "meta.media.0.codec.colorspace": "709",
-            "meta.media.0.codec.name": "h264",
-            "meta.media.0.codec.long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
-            "meta.media.0.codec.bit_rate": "0",
-            "meta.attr.0.stream.DURATION.markup": "00:03:07.133000000",
-            "meta.media.1.stream.type": "audio",
-            "meta.media.1.codec.sample_fmt": "fltp",
-            "meta.media.1.codec.sample_rate": "44100",
-            "meta.media.1.codec.channels": "2",
-            "meta.media.1.codec.name": "aac",
-            "meta.media.1.codec.long_name": "AAC (Advanced Audio Coding)",
-            "meta.media.1.codec.bit_rate": "0",
-            "meta.attr.1.stream.title.markup": "simple_aac_recording",
-            "meta.attr.1.stream.DURATION.markup": "00:03:07.060000000",
-            "meta.attr.ENCODER.markup": "Lavf58.29.100",
-            "meta.media.sample_aspect_num": "1",
-            "meta.media.sample_aspect_den": "1",
-            "meta.media.frame_rate_num": "30",
-            "meta.media.frame_rate_den": "1",
-            "meta.media.colorspace": "709",
-            "meta.media.color_trc": "2",
-            "meta.media.width": "1364",
-            "meta.media.height": "768",
-            "meta.media.color_range": "mpeg",
-            "meta.media.top_field_first": "0",
-            "meta.media.progressive": "1"
-          }
-        },
+          "producer": "producer0"
+        }
+      ]
+    },
+    {
+      "name": "producer",
+      "id": "black_track",
+      "in": "00:00:00.000",
+      "out": "00:29:43.033",
+      "properties": {
+        "length": "2147483647",
+        "eof": "continue",
+        "resource": "black",
+        "aspect_ratio": "1",
+        "mlt_service": "color",
+        "mlt_image_format": "rgb24a",
+        "set.test_audio": "0"
+      }
+    },
+    {
+      "name": "producer",
+      "id": "producer1",
+      "in": "00:00:00.000",
+      "out": "00:13:03.000",
+      "properties": {
+        "length": "23491",
+        "eof": "pause",
+        "resource": "C:/Users/Jorge Arreola/Videos/videooooooo.mkv",
+        "audio_index": "1",
+        "video_index": "0",
+        "mute_on_pause": "0",
+        "mlt_service": "avformat-novalidate",
+        "seekable": "1",
+        "aspect_ratio": "1",
+        "kdenlive:clipname": "",
+        "kdenlive:folderid": "-1",
+        "kdenlive:id": "3",
+        "kdenlive:file_size": "27493394",
+        "kdenlive:file_hash": "9edd077085e6d86321b537f57119057c",
+        "global_feed": "1",
+        "xml": "was here",
+        "meta.media.nb_streams": "2",
+        "meta.media.0.stream.type": "video",
+        "meta.media.0.stream.frame_rate": "30",
+        "meta.media.0.stream.sample_aspect_ratio": "0",
+        "meta.media.0.codec.width": "1364",
+        "meta.media.0.codec.height": "768",
+        "meta.media.0.codec.rotate": "0",
+        "meta.media.0.codec.frame_rate": "30",
+        "meta.media.0.codec.pix_fmt": "yuv420p",
+        "meta.media.0.codec.sample_aspect_ratio": "0",
+        "meta.media.0.codec.colorspace": "709",
+        "meta.media.0.codec.name": "h264",
+        "meta.media.0.codec.long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "meta.media.0.codec.bit_rate": "0",
+        "meta.attr.0.stream.DURATION.markup": "00:13:03.033000000",
+        "meta.media.1.stream.type": "audio",
+        "meta.media.1.codec.sample_fmt": "fltp",
+        "meta.media.1.codec.sample_rate": "44100",
+        "meta.media.1.codec.channels": "2",
+        "meta.media.1.codec.name": "aac",
+        "meta.media.1.codec.long_name": "AAC (Advanced Audio Coding)",
+        "meta.media.1.codec.bit_rate": "0",
+        "meta.attr.1.stream.title.markup": "simple_aac_recording",
+        "meta.attr.1.stream.DURATION.markup": "00:13:02.954000000",
+        "meta.attr.ENCODER.markup": "Lavf58.29.100",
+        "meta.media.sample_aspect_num": "1",
+        "meta.media.sample_aspect_den": "1",
+        "meta.media.frame_rate_num": "30",
+        "meta.media.frame_rate_den": "1",
+        "meta.media.colorspace": "709",
+        "meta.media.color_trc": "2",
+        "meta.media.width": "1364",
+        "meta.media.height": "768",
+        "meta.media.color_range": "mpeg",
+        "meta.media.top_field_first": "0",
+        "meta.media.progressive": "1",
+        "set.test_audio": "0",
+        "set.test_image": "1"
+      }
+    },
+    {
+      "name": "playlist",
+      "id": "playlist0",
+      "properties": {
+        "kdenlive:audio_track": "1"
+      },
+      "entries": [
         {
-          "name": "playlist",
-          "id": "main_bin",
-          "properties": {
-            "kdenlive:docproperties.activeTrack": "0",
-            "kdenlive:docproperties.audioChannels": "2",
-            "kdenlive:docproperties.audioTarget": "-1",
-            "kdenlive:docproperties.disablepreview": "0",
-            "kdenlive:docproperties.documentid": "1603402929383",
-            "kdenlive:docproperties.enableTimelineZone": "0",
-            "kdenlive:docproperties.enableexternalproxy": "0",
-            "kdenlive:docproperties.enableproxy": "0",
-            "kdenlive:docproperties.externalproxyparams": "../Sub;;S03.MP4;../Clip;;.MXF",
-            "kdenlive:docproperties.generateimageproxy": "0",
-            "kdenlive:docproperties.generateproxy": "0",
-            "kdenlive:docproperties.groups": "[\r\n    {\r\n        \"children\": [\r\n            {\r\n                \"data\": \"1:0\",\r\n                \"leaf\": \"clip\",\r\n                \"type\": \"Leaf\"\r\n            },\r\n            {\r\n                \"data\": \"0:0\",\r\n                \"leaf\": \"clip\",\r\n                \"type\": \"Leaf\"\r\n            }\r\n        ],\r\n        \"type\": \"AVSplit\"\r\n    }\r\n]\r\n",
-            "kdenlive:docproperties.kdenliveversion": "20.08.0",
-            "kdenlive:docproperties.position": "481",
-            "kdenlive:docproperties.previewextension": "",
-            "kdenlive:docproperties.previewparameters": "",
-            "kdenlive:docproperties.profile": "C:/Users/Jorge Arreola/AppData/Roaming/kdenlive/profiles/customprofile0",
-            "kdenlive:docproperties.proxyextension": "",
-            "kdenlive:docproperties.proxyimageminsize": "2000",
-            "kdenlive:docproperties.proxyimagesize": "800",
-            "kdenlive:docproperties.proxyminsize": "1000",
-            "kdenlive:docproperties.proxyparams": "",
-            "kdenlive:docproperties.scrollPos": "0",
-            "kdenlive:docproperties.seekOffset": "30000",
-            "kdenlive:docproperties.version": "1",
-            "kdenlive:docproperties.verticalzoom": "1",
-            "kdenlive:docproperties.videoTarget": "-1",
-            "kdenlive:docproperties.zonein": "0",
-            "kdenlive:docproperties.zoneout": "75",
-            "kdenlive:docproperties.zoom": "16",
-            "kdenlive:expandedFolders": "",
-            "kdenlive:documentnotes": "",
-            "xml_retain": "1"
-          },
-          "entries": [
-            {
-              "in": "00:00:00.000",
-              "out": "00:13:03.000",
-              "producer": "producer0"
-            }
-          ]
-        },
-        {
-          "name": "producer",
-          "id": "black_track",
-          "in": "00:00:00.000",
-          "out": "00:22:05.000",
-          "properties": {
-            "length": "2147483647",
-            "eof": "continue",
-            "resource": "black",
-            "aspect_ratio": "1",
-            "mlt_service": "color",
-            "mlt_image_format": "rgb24a",
-            "set.test_audio": "0"
-          }
-        },
-        {
-          "name": "producer",
-          "id": "producer1",
           "in": "00:00:00.000",
           "out": "00:13:03.000",
+          "producer": "producer1",
           "properties": {
-            "length": "23491",
-            "eof": "pause",
-            "resource": "C:/Users/Jorge Arreola/Videos/VARIABLES1.mkv",
-            "audio_index": "1",
-            "video_index": "0",
-            "mute_on_pause": "0",
-            "mlt_service": "avformat-novalidate",
-            "seekable": "1",
-            "aspect_ratio": "1",
-            "kdenlive:clipname": "cool",
-            "kdenlive:folderid": "-1",
-            "kdenlive:id": "2",
-            "kdenlive:file_size": "27493394",
-            "kdenlive:file_hash": "9edd077085e6d86321b537f57119057c",
-            "global_feed": "1",
-            "xml": "was here",
-            "meta.media.nb_streams": "2",
-            "meta.media.0.stream.type": "video",
-            "meta.media.0.stream.frame_rate": "30",
-            "meta.media.0.stream.sample_aspect_ratio": "0",
-            "meta.media.0.codec.width": "1364",
-            "meta.media.0.codec.height": "768",
-            "meta.media.0.codec.rotate": "0",
-            "meta.media.0.codec.frame_rate": "30",
-            "meta.media.0.codec.pix_fmt": "yuv420p",
-            "meta.media.0.codec.sample_aspect_ratio": "0",
-            "meta.media.0.codec.colorspace": "709",
-            "meta.media.0.codec.name": "h264",
-            "meta.media.0.codec.long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
-            "meta.media.0.codec.bit_rate": "0",
-            "meta.attr.0.stream.DURATION.markup": "00:03:07.133000000",
-            "meta.media.1.stream.type": "audio",
-            "meta.media.1.codec.sample_fmt": "fltp",
-            "meta.media.1.codec.sample_rate": "44100",
-            "meta.media.1.codec.channels": "2",
-            "meta.media.1.codec.name": "aac",
-            "meta.media.1.codec.long_name": "AAC (Advanced Audio Coding)",
-            "meta.media.1.codec.bit_rate": "0",
-            "meta.attr.1.stream.title.markup": "simple_aac_recording",
-            "meta.attr.1.stream.DURATION.markup": "00:03:07.060000000",
-            "meta.attr.ENCODER.markup": "Lavf58.29.100",
-            "meta.media.sample_aspect_num": "1",
-            "meta.media.sample_aspect_den": "1",
-            "meta.media.frame_rate_num": "30",
-            "meta.media.frame_rate_den": "1",
-            "meta.media.colorspace": "709",
-            "meta.media.color_trc": "2",
-            "meta.media.width": "1364",
-            "meta.media.height": "768",
-            "meta.media.color_range": "mpeg",
-            "meta.media.top_field_first": "0",
-            "meta.media.progressive": "1",
-            "set.test_audio": "0",
-            "set.test_image": "1"
+            "kdenlive:id": "3"
+          }
+        }
+      ],
+      "filters": [
+        {
+          "id": "filter0",
+          "properties": {
+            "window": "75",
+            "max_gain": "20dB",
+            "mlt_service": "volume",
+            "internal_added": "237",
+            "disable": "1"
           }
         },
         {
-          "name": "playlist",
-          "id": "playlist0",
+          "id": "filter1",
           "properties": {
-            "kdenlive:audio_track": "1"
-          },
-          "entries": [
-            {
-              "in": "00:00:00.000",
-              "out": "00:05:24.967",
-              "producer": "producer1",
-              "properties": {
-                "kdenlive:id": "2"
-              }
-            }
-          ],
-          "filters": [
-            {
-              "id": "filter0",
-              "properties": {
-                "window": "75",
-                "max_gain": "20dB",
-                "mlt_service": "volume",
-                "internal_added": "237",
-                "disable": "1"
-              }
-            },
-            {
-              "id": "filter1",
-              "properties": {
-                "channel": "-1",
-                "mlt_service": "panner",
-                "internal_added": "237",
-                "start": "0.5",
-                "disable": "1"
-              }
-            }
-          ]
+            "channel": "-1",
+            "mlt_service": "panner",
+            "internal_added": "237",
+            "start": "0.5",
+            "disable": "1"
+          }
+        }
+      ]
+    },
+    {
+      "name": "playlist",
+      "id": "playlist1"
+    },
+    {
+      "name": "tractor",
+      "id": "tractor0",
+      "in": "00:00:00.000",
+      "out": "00:13:03.000",
+      "properties": {
+        "kdenlive:audio_track": "1",
+        "kdenlive:trackheight": "67",
+        "kdenlive:collapsed": "28",
+        "kdenlive:thumbs_format": "",
+        "kdenlive:audio_rec": "",
+        "kdenlive:timeline_active": "1"
+      },
+      "tracks": [
+        {
+          "producer": "playlist0",
+          "hide": "video"
         },
         {
-          "name": "playlist",
-          "id": "playlist1"
-        },
+          "producer": "playlist1",
+          "hide": "both"
+        }
+      ],
+      "filters": [
         {
-          "name": "tractor",
-          "id": "tractor0",
-          "in": "00:00:00.000",
-          "out": "00:05:24.967",
+          "id": "filter2",
           "properties": {
-            "kdenlive:audio_track": "1",
-            "kdenlive:trackheight": "67",
-            "kdenlive:collapsed": "28",
-            "kdenlive:thumbs_format": "",
-            "kdenlive:audio_rec": "",
-            "kdenlive:timeline_active": "1"
-          },
-          "tracks": [
-            {
-              "producer": "playlist0",
-              "hide": "video"
-            },
-            {
-              "producer": "playlist1",
-              "hide": "both"
-            }
-          ],
-          "filters": [
-            {
-              "id": "filter2",
-              "properties": {
-                "iec_scale": "0",
-                "mlt_service": "audiolevel",
-                "disable": "1"
-              }
-            }
-          ]
-        },
+            "iec_scale": "0",
+            "mlt_service": "audiolevel",
+            "disable": "1"
+          }
+        }
+      ]
+    },
+    {
+      "name": "producer",
+      "id": "producer2",
+      "in": "00:00:00.000",
+      "out": "00:13:03.000",
+      "properties": {
+        "length": "23491",
+        "eof": "pause",
+        "resource": "C:/Users/Jorge Arreola/Videos/videooooooo.mkv",
+        "audio_index": "1",
+        "video_index": "0",
+        "mute_on_pause": "0",
+        "mlt_service": "avformat-novalidate",
+        "seekable": "1",
+        "aspect_ratio": "1",
+        "kdenlive:clipname": "",
+        "kdenlive:folderid": "-1",
+        "kdenlive:id": "3",
+        "kdenlive:file_size": "27493394",
+        "kdenlive:file_hash": "9edd077085e6d86321b537f57119057c",
+        "global_feed": "1",
+        "xml": "was here",
+        "meta.media.nb_streams": "2",
+        "meta.media.0.stream.type": "video",
+        "meta.media.0.stream.frame_rate": "30",
+        "meta.media.0.stream.sample_aspect_ratio": "0",
+        "meta.media.0.codec.width": "1364",
+        "meta.media.0.codec.height": "768",
+        "meta.media.0.codec.rotate": "0",
+        "meta.media.0.codec.frame_rate": "30",
+        "meta.media.0.codec.pix_fmt": "yuv420p",
+        "meta.media.0.codec.sample_aspect_ratio": "0",
+        "meta.media.0.codec.colorspace": "709",
+        "meta.media.0.codec.name": "h264",
+        "meta.media.0.codec.long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "meta.media.0.codec.bit_rate": "0",
+        "meta.attr.0.stream.DURATION.markup": "00:13:03.033000000",
+        "meta.media.1.stream.type": "audio",
+        "meta.media.1.codec.sample_fmt": "fltp",
+        "meta.media.1.codec.sample_rate": "44100",
+        "meta.media.1.codec.channels": "2",
+        "meta.media.1.codec.name": "aac",
+        "meta.media.1.codec.long_name": "AAC (Advanced Audio Coding)",
+        "meta.media.1.codec.bit_rate": "0",
+        "meta.attr.1.stream.title.markup": "simple_aac_recording",
+        "meta.attr.1.stream.DURATION.markup": "00:13:02.954000000",
+        "meta.attr.ENCODER.markup": "Lavf58.29.100",
+        "meta.media.sample_aspect_num": "1",
+        "meta.media.sample_aspect_den": "1",
+        "meta.media.frame_rate_num": "30",
+        "meta.media.frame_rate_den": "1",
+        "meta.media.colorspace": "709",
+        "meta.media.color_trc": "2",
+        "meta.media.width": "1364",
+        "meta.media.height": "768",
+        "meta.media.color_range": "mpeg",
+        "meta.media.top_field_first": "0",
+        "meta.media.progressive": "1",
+        "set.test_audio": "1",
+        "set.test_image": "0"
+      }
+    },
+    {
+      "name": "playlist",
+      "id": "playlist2",
+      "entries": [
         {
-          "name": "producer",
-          "id": "producer2",
           "in": "00:00:00.000",
           "out": "00:13:03.000",
+          "producer": "producer2",
           "properties": {
-            "length": "23491",
-            "eof": "pause",
-            "resource": "C:/Users/Jorge Arreola/Videos/VARIABLES1.mkv",
-            "audio_index": "1",
-            "video_index": "0",
-            "mute_on_pause": "0",
-            "mlt_service": "avformat-novalidate",
-            "seekable": "1",
-            "aspect_ratio": "1",
-            "kdenlive:clipname": "",
-            "kdenlive:folderid": "-1",
-            "kdenlive:id": "2",
-            "kdenlive:file_size": "27493394",
-            "kdenlive:file_hash": "9edd077085e6d86321b537f57119057c",
-            "global_feed": "1",
-            "xml": "was here",
-            "meta.media.nb_streams": "2",
-            "meta.media.0.stream.type": "video",
-            "meta.media.0.stream.frame_rate": "30",
-            "meta.media.0.stream.sample_aspect_ratio": "0",
-            "meta.media.0.codec.width": "1364",
-            "meta.media.0.codec.height": "768",
-            "meta.media.0.codec.rotate": "0",
-            "meta.media.0.codec.frame_rate": "30",
-            "meta.media.0.codec.pix_fmt": "yuv420p",
-            "meta.media.0.codec.sample_aspect_ratio": "0",
-            "meta.media.0.codec.colorspace": "709",
-            "meta.media.0.codec.name": "h264",
-            "meta.media.0.codec.long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
-            "meta.media.0.codec.bit_rate": "0",
-            "meta.attr.0.stream.DURATION.markup": "00:03:07.133000000",
-            "meta.media.1.stream.type": "audio",
-            "meta.media.1.codec.sample_fmt": "fltp",
-            "meta.media.1.codec.sample_rate": "44100",
-            "meta.media.1.codec.channels": "2",
-            "meta.media.1.codec.name": "aac",
-            "meta.media.1.codec.long_name": "AAC (Advanced Audio Coding)",
-            "meta.media.1.codec.bit_rate": "0",
-            "meta.attr.1.stream.title.markup": "simple_aac_recording",
-            "meta.attr.1.stream.DURATION.markup": "00:03:07.060000000",
-            "meta.attr.ENCODER.markup": "Lavf58.29.100",
-            "meta.media.sample_aspect_num": "1",
-            "meta.media.sample_aspect_den": "1",
-            "meta.media.frame_rate_num": "30",
-            "meta.media.frame_rate_den": "1",
-            "meta.media.colorspace": "709",
-            "meta.media.color_trc": "2",
-            "meta.media.width": "1364",
-            "meta.media.height": "768",
-            "meta.media.color_range": "mpeg",
-            "meta.media.top_field_first": "0",
-            "meta.media.progressive": "1",
-            "set.test_audio": "1",
-            "set.test_image": "0"
+            "kdenlive:id": "3"
+          }
+        }
+      ]
+    },
+    {
+      "name": "playlist",
+      "id": "playlist3"
+    },
+    {
+      "name": "tractor",
+      "id": "tractor1",
+      "in": "00:00:00.000",
+      "out": "00:13:03.000",
+      "properties": {
+        "kdenlive:trackheight": "67",
+        "kdenlive:collapsed": "28",
+        "kdenlive:thumbs_format": "",
+        "kdenlive:audio_rec": "",
+        "kdenlive:timeline_active": "1"
+      },
+      "tracks": [
+        {
+          "producer": "playlist2",
+          "hide": "audio"
+        },
+        {
+          "producer": "playlist3",
+          "hide": "both"
+        }
+      ]
+    },
+    {
+      "name": "tractor",
+      "id": "tractor2",
+      "in": "00:00:00.000",
+      "out": "00:29:43.033",
+      "global_feed": "1",
+      "tracks": [
+        {
+          "producer": "black_track"
+        },
+        {
+          "producer": "tractor0"
+        },
+        {
+          "producer": "tractor1"
+        }
+      ],
+      "transitions": [
+        {
+          "id": "transition0",
+          "properties": {
+            "a_track": "0",
+            "b_track": "1",
+            "mlt_service": "mix",
+            "kdenlive_id": "mix",
+            "internal_added": "237",
+            "always_active": "1",
+            "sum": "1"
           }
         },
         {
-          "name": "playlist",
-          "id": "playlist2",
-          "entries": [
-            {
-              "in": "00:00:00.000",
-              "out": "00:05:24.967",
-              "producer": "producer2",
-              "properties": {
-                "kdenlive:id": "2"
-              }
-            }
-          ]
-        },
-        {
-          "name": "playlist",
-          "id": "playlist3"
-        },
-        {
-          "name": "tractor",
-          "id": "tractor1",
-          "in": "00:00:00.000",
-          "out": "00:05:24.967",
+          "id": "transition1",
           "properties": {
-            "kdenlive:trackheight": "67",
-            "kdenlive:collapsed": "28",
-            "kdenlive:thumbs_format": "",
-            "kdenlive:audio_rec": "",
-            "kdenlive:timeline_active": "1"
-          },
-          "tracks": [
-            {
-              "producer": "playlist2",
-              "hide": "audio"
-            },
-            {
-              "producer": "playlist3",
-              "hide": "both"
-            }
-          ]
+            "a_track": "0",
+            "b_track": "2",
+            "compositing": "0",
+            "distort": "0",
+            "rotate_center": "0",
+            "mlt_service": "qtblend",
+            "kdenlive_id": "qtblend",
+            "internal_added": "237",
+            "always_active": "1"
+          }
+        }
+      ],
+      "filters": [
+        {
+          "id": "filter3",
+          "properties": {
+            "window": "75",
+            "max_gain": "20dB",
+            "level": "5.02471",
+            "mlt_service": "volume",
+            "internal_added": "237",
+            "disable": "0"
+          }
         },
         {
-          "name": "tractor",
-          "id": "tractor2",
-          "in": "00:00:00.000",
-          "out": "00:22:05.000",
-          "global_feed": "1",
-          "tracks": [
-            {
-              "producer": "black_track"
-            },
-            {
-              "producer": "tractor0"
-            },
-            {
-              "producer": "tractor1"
-            }
-          ],
-          "transitions": [
-            {
-              "id": "transition0",
-              "properties": {
-                "a_track": "0",
-                "b_track": "1",
-                "mlt_service": "mix",
-                "kdenlive_id": "mix",
-                "internal_added": "237",
-                "always_active": "1",
-                "sum": "1"
-              }
-            },
-            {
-              "id": "transition1",
-              "properties": {
-                "a_track": "0",
-                "b_track": "2",
-                "compositing": "0",
-                "distort": "0",
-                "rotate_center": "0",
-                "mlt_service": "qtblend",
-                "kdenlive_id": "qtblend",
-                "internal_added": "237",
-                "always_active": "1"
-              }
-            }
-          ],
-          "filters": [
-            {
-              "id": "filter3",
-              "properties": {
-                "window": "75",
-                "max_gain": "20dB",
-                "level": "0.220",
-                "mlt_service": "volume",
-                "internal_added": "237",
-                "disable": "0"
-              }
-            },
-            {
-              "id": "filter4",
-              "properties": {
-                "channel": "-1",
-                "mlt_service": "panner",
-                "internal_added": "237",
-                "start": "0.5",
-                "disable": "1"
-              }
-            },
-            {
-              "id": "filter5",
-              "properties": {
-                "iec_scale": "0",
-                "mlt_service": "audiolevel",
-                "disable": "1"
-              }
-            }
-          ]
+          "id": "filter4",
+          "properties": {
+            "channel": "-1",
+            "mlt_service": "panner",
+            "internal_added": "237",
+            "start": "0.5",
+            "disable": "1"
+          }
+        },
+        {
+          "id": "filter5",
+          "properties": {
+            "iec_scale": "0",
+            "mlt_service": "audiolevel",
+            "disable": "1"
+          }
         }
       ]
     }

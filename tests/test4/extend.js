@@ -3,12 +3,13 @@ var fs = require('fs');
 
 const processA = require('./processA');
 const processB = require('./processB');
+const processC = require('./processC');
 
-var xml = fs.readFileSync('./test.kdenlive');
-var js = convert.xml2js(xml, {spaces: 2});
+var js = JSON.parse(fs.readFileSync('./test.kdenlive.json'));
 
-js = processA.compact(js);
-js = processB.compact(js);
+js = processA.extend(js);
+js = processB.extend(js);
+js = processC.extend(js);
 
-var json = JSON.stringify(js, null, 2);
-fs.writeFileSync( './test.kdenlive.json', json);
+xml = convert.js2xml(js, {spaces: 1, ignoreComment: true});
+fs.writeFileSync('./test.kdenlive', xml);

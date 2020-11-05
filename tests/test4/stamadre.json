@@ -1,6 +1,6 @@
 {
     "name": "producer",
-    "id": "producer1",
+    "id": "producer2",
     "in": "00:00:00.000",
     "out": "00:13:03.000",
     "properties": {
@@ -13,7 +13,7 @@
       "mlt_service": "avformat-novalidate",
       "seekable": "1",
       "aspect_ratio": "1",
-      "kdenlive:clipname": "cool",
+      "kdenlive:clipname": "",
       "kdenlive:folderid": "-1",
       "kdenlive:id": "2",
       "kdenlive:file_size": "27493394",
@@ -56,7 +56,7 @@
       "meta.media.color_range": "mpeg",
       "meta.media.top_field_first": "0",
       "meta.media.progressive": "1",
-      "set.test_audio": "0",
-      "set.test_image": "1"
+      "set.test_audio": "1",
+      "set.test_image": "0"
     }
   }

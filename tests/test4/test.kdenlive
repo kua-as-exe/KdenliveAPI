@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
-<mlt LC_NUMERIC="es_MX" producer="main_bin" version="6.23.0" root="C:/ARREOLA/Projects/KdenliveAPI/tests/test4">
+<mlt LC_NUMERIC="es_MX" producer="main_bin" version="6.23.0" root="C:/ARREOLA/Projects/KdenliveAPI/tests/test2">
  <profile frame_rate_num="30" sample_aspect_num="1" display_aspect_den="768" colorspace="709" progressive="1" description="1368x768 30.00fps" display_aspect_num="1364" frame_rate_den="1" width="1368" height="768" sample_aspect_den="1"/>
  <producer id="producer0" in="00:00:00.000" out="00:13:03.000">
   <property name="length">23491</property>
   <property name="eof">pause</property>
-  <property name="resource">C:/Users/Jorge Arreola/Videos/VARIABLES1.mkv</property>
+  <property name="resource">C:/Users/Jorge Arreola/Videos/videooooooo.mkv</property>
   <property name="audio_index">1</property>
   <property name="video_index">0</property>
   <property name="mute_on_pause">0</property>
   <property name="mlt_service">avformat-novalidate</property>
   <property name="seekable">1</property>
   <property name="aspect_ratio">1</property>
-  <property name="kdenlive:clipname">cool</property>
+  <property name="kdenlive:clipname">XD</property>
   <property name="kdenlive:folderid">-1</property>
-  <property name="kdenlive:id">2</property>
+  <property name="kdenlive:id">3</property>
   <property name="kdenlive:file_size">27493394</property>
   <property name="kdenlive:file_hash">9edd077085e6d86321b537f57119057c</property>
   <property name="global_feed">1</property>
@@ -31,7 +31,7 @@
   <property name="meta.media.0.codec.name">h264</property>
   <property name="meta.media.0.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
   <property name="meta.media.0.codec.bit_rate">0</property>
-  <property name="meta.attr.0.stream.DURATION.markup">00:03:07.133000000</property>
+  <property name="meta.attr.0.stream.DURATION.markup">00:13:03.033000000</property>
   <property name="meta.media.1.stream.type">audio</property>
   <property name="meta.media.1.codec.sample_fmt">fltp</property>
   <property name="meta.media.1.codec.sample_rate">44100</property>
@@ -40,7 +40,7 @@
   <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
   <property name="meta.media.1.codec.bit_rate">0</property>
   <property name="meta.attr.1.stream.title.markup">simple_aac_recording</property>
-  <property name="meta.attr.1.stream.DURATION.markup">00:03:07.060000000</property>
+  <property name="meta.attr.1.stream.DURATION.markup">00:13:02.954000000</property>
   <property name="meta.attr.ENCODER.markup">Lavf58.29.100</property>
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
@@ -107,7 +107,7 @@
   <property name="xml_retain">1</property>
   <entry producer="producer0" in="00:00:00.000" out="00:13:03.000"/>
  </playlist>
- <producer id="black_track" in="00:00:00.000" out="00:22:05.000">
+ <producer id="black_track" in="00:00:00.000" out="00:29:43.033">
   <property name="length">2147483647</property>
   <property name="eof">continue</property>
   <property name="resource">black</property>
@@ -119,16 +119,16 @@
  <producer id="producer1" in="00:00:00.000" out="00:13:03.000">
   <property name="length">23491</property>
   <property name="eof">pause</property>
-  <property name="resource">C:/Users/Jorge Arreola/Videos/VARIABLES1.mkv</property>
+  <property name="resource">C:/Users/Jorge Arreola/Videos/videooooooo.mkv</property>
   <property name="audio_index">1</property>
   <property name="video_index">0</property>
   <property name="mute_on_pause">0</property>
   <property name="mlt_service">avformat-novalidate</property>
   <property name="seekable">1</property>
   <property name="aspect_ratio">1</property>
-  <property name="kdenlive:clipname">cool</property>
+  <property name="kdenlive:clipname"/>
   <property name="kdenlive:folderid">-1</property>
-  <property name="kdenlive:id">2</property>
+  <property name="kdenlive:id">3</property>
   <property name="kdenlive:file_size">27493394</property>
   <property name="kdenlive:file_hash">9edd077085e6d86321b537f57119057c</property>
   <property name="global_feed">1</property>
@@ -147,7 +147,7 @@
   <property name="meta.media.0.codec.name">h264</property>
   <property name="meta.media.0.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
   <property name="meta.media.0.codec.bit_rate">0</property>
-  <property name="meta.attr.0.stream.DURATION.markup">00:03:07.133000000</property>
+  <property name="meta.attr.0.stream.DURATION.markup">00:13:03.033000000</property>
   <property name="meta.media.1.stream.type">audio</property>
   <property name="meta.media.1.codec.sample_fmt">fltp</property>
   <property name="meta.media.1.codec.sample_rate">44100</property>
@@ -156,7 +156,7 @@
   <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
   <property name="meta.media.1.codec.bit_rate">0</property>
   <property name="meta.attr.1.stream.title.markup">simple_aac_recording</property>
-  <property name="meta.attr.1.stream.DURATION.markup">00:03:07.060000000</property>
+  <property name="meta.attr.1.stream.DURATION.markup">00:13:02.954000000</property>
   <property name="meta.attr.ENCODER.markup">Lavf58.29.100</property>
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
@@ -174,8 +174,8 @@
  </producer>
  <playlist id="playlist0">
   <property name="kdenlive:audio_track">1</property>
-  <entry producer="producer1" in="00:00:00.000" out="00:05:24.967">
-   <property name="kdenlive:id">2</property>
+  <entry producer="producer1" in="00:00:00.000" out="00:13:03.000">
+   <property name="kdenlive:id">3</property>
   </entry>
   <filter id="filter0">
    <property name="window">75</property>
@@ -193,7 +193,7 @@
   </filter>
  </playlist>
  <playlist id="playlist1"/>
- <tractor id="tractor0" in="00:00:00.000" out="00:05:24.967">
+ <tractor id="tractor0" in="00:00:00.000" out="00:13:03.000">
   <property name="kdenlive:audio_track">1</property>
   <property name="kdenlive:trackheight">67</property>
   <property name="kdenlive:collapsed">28</property>
@@ -211,7 +211,7 @@
  <producer id="producer2" in="00:00:00.000" out="00:13:03.000">
   <property name="length">23491</property>
   <property name="eof">pause</property>
-  <property name="resource">C:/Users/Jorge Arreola/Videos/VARIABLES1.mkv</property>
+  <property name="resource">C:/Users/Jorge Arreola/Videos/videooooooo.mkv</property>
   <property name="audio_index">1</property>
   <property name="video_index">0</property>
   <property name="mute_on_pause">0</property>
@@ -220,7 +220,7 @@
   <property name="aspect_ratio">1</property>
   <property name="kdenlive:clipname"/>
   <property name="kdenlive:folderid">-1</property>
-  <property name="kdenlive:id">2</property>
+  <property name="kdenlive:id">3</property>
   <property name="kdenlive:file_size">27493394</property>
   <property name="kdenlive:file_hash">9edd077085e6d86321b537f57119057c</property>
   <property name="global_feed">1</property>
@@ -239,7 +239,7 @@
   <property name="meta.media.0.codec.name">h264</property>
   <property name="meta.media.0.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
   <property name="meta.media.0.codec.bit_rate">0</property>
-  <property name="meta.attr.0.stream.DURATION.markup">00:03:07.133000000</property>
+  <property name="meta.attr.0.stream.DURATION.markup">00:13:03.033000000</property>
   <property name="meta.media.1.stream.type">audio</property>
   <property name="meta.media.1.codec.sample_fmt">fltp</property>
   <property name="meta.media.1.codec.sample_rate">44100</property>
@@ -248,7 +248,7 @@
   <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
   <property name="meta.media.1.codec.bit_rate">0</property>
   <property name="meta.attr.1.stream.title.markup">simple_aac_recording</property>
-  <property name="meta.attr.1.stream.DURATION.markup">00:03:07.060000000</property>
+  <property name="meta.attr.1.stream.DURATION.markup">00:13:02.954000000</property>
   <property name="meta.attr.ENCODER.markup">Lavf58.29.100</property>
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
@@ -265,12 +265,12 @@
   <property name="set.test_image">0</property>
  </producer>
  <playlist id="playlist2">
-  <entry producer="producer2" in="00:00:00.000" out="00:05:24.967">
-   <property name="kdenlive:id">2</property>
+  <entry producer="producer2" in="00:00:00.000" out="00:13:03.000">
+   <property name="kdenlive:id">3</property>
   </entry>
  </playlist>
  <playlist id="playlist3"/>
- <tractor id="tractor1" in="00:00:00.000" out="00:05:24.967">
+ <tractor id="tractor1" in="00:00:00.000" out="00:13:03.000">
   <property name="kdenlive:trackheight">67</property>
   <property name="kdenlive:collapsed">28</property>
   <property name="kdenlive:thumbs_format"/>
@@ -279,7 +279,7 @@
   <track hide="audio" producer="playlist2"/>
   <track hide="both" producer="playlist3"/>
  </tractor>
- <tractor id="tractor2" global_feed="1" in="00:00:00.000" out="00:22:05.000">
+ <tractor id="tractor2" global_feed="1" in="00:00:00.000" out="00:29:43.033">
   <track producer="black_track"/>
   <track producer="tractor0"/>
   <track producer="tractor1"/>
@@ -306,7 +306,7 @@
   <filter id="filter3">
    <property name="window">75</property>
    <property name="max_gain">20dB</property>
-   <property name="level">0.220</property>
+   <property name="level">5.02471</property>
    <property name="mlt_service">volume</property>
    <property name="internal_added">237</property>
    <property name="disable">0</property>
