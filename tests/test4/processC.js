@@ -1,44 +1,25 @@
-const extractElements = (e, list) => {
-  e.elements.forEach( (child, index) => {
-    if(list[child.name]){
-      let key = list[child.name];
-      delete child.name;
-      if(e[key] === undefined) e[key] = [];
-      e[key].push(child);
-      delete e.elements[index];
+const processTractor = (mlt) => {
+  let endTractor = mlt.elements[mlt.elements.length-1]; 
+
+  const processProducer = (id) => {
+    let prodElement = mlt.elements.find( (e, index) => e.id === id);  
+    if(prodElement.name === "producer"){
+      // return ready
+    }else if(prodElement.name === "playlist"){
+      // entries
+    }else if(prodElement.name === "tractor"){
+      // tracks
     }
-  })
-  if(e.elements)
-    e.elements = e.elements.filter( elem => elem !== undefined); // filter empty elements
-  if(e.elements.length == 0) delete e.elements;
-  return e;
-}
-const insertElements = (e, list) => {
-    let t = {
-      name,
-      ...child
-    }
-    e.elements.push(t);
+  }
+
+  // find the equivalent globalProducer
+  /*
+  let globalProducer;
+  if(mlt.producers && mlt.producers > 0)
+    globalProducer = mlt.producers.find( p => p.id === id);
+  */
   
-    Object.keys(list).forEach( specificKey => {
-      let key = list[specificKey];
-      if(e[key]){
-        e[key].forEach( (child) => {
-          pushElement({
-            name: specificKey,
-            ...child
-          });
-        })
-        delete e[key];
-      }
-    })
-
-}
-
-const list = {
-  producer: 'producers' ,
-  playlist: 'playlists',
-  tractor: 'tractors'
+  return mlt;
 }
 
 const compact = (mlt) => {
@@ -46,10 +27,41 @@ const compact = (mlt) => {
   mlt.profile = mlt.elements[0].attributes;
   delete mlt.elements[0];
 
-  mlt = extractElements(mlt, list)
-
   // GLOBAL PRODUCERS elements[1, ...(id:"main_bin")]
-  
+  mlt.producers = [];
+  let main_binIndex = 1;
+  for(let i = 1; i <= mlt.elements.length; i++){
+    let child = mlt.elements[i];
+    if(child.id === "main_bin"){
+      main_binIndex = i;
+      break; // stop when find main_bin
+    }
+    else{
+      mlt.producers.push(child);
+      delete mlt.elements[i];
+    }
+  }
+
+  // main_bin
+  mlt.main_bin = mlt.elements[main_binIndex]; // copy elements[main_bin] to mlt.main_bin
+  delete mlt.elements[main_binIndex]; // remove mlt.elements[main_bin]
+  delete mlt.main_bin.name // mlt.main_bin.name = "playlist"
+ 
+  // processing tractors
+  mlt = processTractor(mlt)
+  /*
+  for(let i = mlt.elements.length-1; i > 0; i --){
+    let e = mlt.elements[i];
+    if(e.name === "tractor"){
+      let tractor = e;
+      tractor.tracks.forEach( track => {
+        let {producer, index} = getProducer(mlt, track.producer)
+      })
+    }
+  }
+  */
+
+
   //mlt.elements = mlt.elements.filter( elem => elem !== undefined); // filter empty elements
   return mlt;
 }
@@ -62,7 +74,7 @@ const extend = (mlt) => {
   }
   mlt.elements = [profileElement, ...mlt.elements];
   
-  mlt = insertElements(mlt, list);
+  //mlt = insertElements(mlt, list);
   
   return mlt;
 }
