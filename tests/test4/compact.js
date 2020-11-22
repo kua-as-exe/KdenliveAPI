@@ -7,6 +7,8 @@ const processC = require('./processC');
 
 var xml = fs.readFileSync('./../test.bak.kdenlive');
 var js = convert.xml2js(xml, {spaces: 2});
+var json = JSON.stringify(js, null, 2);
+fs.writeFileSync( './test.kdenlive.nocomprimir.json', json);
 //console.log("JSON", js)
 
 js = processA.compact(js);

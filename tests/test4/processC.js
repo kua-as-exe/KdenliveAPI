@@ -1,16 +1,52 @@
-const processTractor = (mlt) => {
-  let endTractor = mlt.elements[mlt.elements.length-1]; 
+const childsIDs = {
+  tractor: 'tracks',
+  playlist: 'entries'
+}
 
-  const processProducer = (id) => {
-    let prodElement = mlt.elements.find( (e, index) => e.id === id);  
-    if(prodElement.name === "producer"){
-      // return ready
-    }else if(prodElement.name === "playlist"){
-      // entries
-    }else if(prodElement.name === "tractor"){
-      // tracks
+const processTractor = (mlt) => {
+
+  const processElement = (id) => {
+    let elemID = mlt.elements.findIndex( (e, index) => e && e.id === id);  
+    if(elemID === -1) return undefined;
+
+    let elem = mlt.elements[elemID]; // ahuevo get the element
+
+    // recurse
+    if(elem.name === "producer"){ // if producer
+      let producerID = elem.properties['kdenlive:id'];
+      if(mlt.producers[producerID]){ // check if exist a global producer
+        elem.refID = producerID;
+        let global = mlt.producers[elem.refID];
+        Object.keys(global.properties).forEach( key => {
+          if(elem.properties[key] === global.properties[key]){
+            delete elem.properties[key];
+          }
+        })
+
+        delete elem.id; // removeID could change if elements are added
+      }else { // if not lol
+        // nothing to do xde
+      }
+      // its better to generate the ID's from expanding process
+
+    }else{ // if tractor or playlist
+      let childsKey = childsIDs[elem.name];
+      if(elem[childsKey]){
+        elem[childsKey].forEach( (childProd, childIndex) => {
+          elem[childsKey][childIndex] = processElement(childProd.producer)
+        })
+      }
     }
+    //delete elem.id;
+    delete mlt.elements[elemID];
+    return elem;
   }
+
+  let endTractor = mlt.elements[mlt.elements.length-1]; 
+  mlt.timeline = processElement(endTractor.id);
+
+  mlt.elements = mlt.elements.filter( elem => elem !== undefined); // filter empty elements
+  if(mlt.elements.length == 0) delete mlt.elements;
 
   // find the equivalent globalProducer
   /*
@@ -28,7 +64,7 @@ const compact = (mlt) => {
   delete mlt.elements[0];
 
   // GLOBAL PRODUCERS elements[1, ...(id:"main_bin")]
-  mlt.producers = [];
+  mlt.producers = {};
   let main_binIndex = 1;
   for(let i = 1; i <= mlt.elements.length; i++){
     let child = mlt.elements[i];
@@ -37,7 +73,9 @@ const compact = (mlt) => {
       break; // stop when find main_bin
     }
     else{
-      mlt.producers.push(child);
+      childID = child.properties['kdenlive:id'];
+      delete child.id; // remove id because its relative and could be generated on extend process
+      mlt.producers[childID] = child;
       delete mlt.elements[i];
     }
   }
