@@ -4,12 +4,16 @@ const childsIDs = {
 }
 
 const processTractor = (mlt) => {
-
+  let space = [];
   const processElement = (id) => {
     let elemID = mlt.elements.findIndex( (e, index) => e && e.id === id);  
     if(elemID === -1) return undefined;
-
+    
     let elem = mlt.elements[elemID]; // ahuevo get the element
+
+    console.log(space.join('')+elem.name + ': ' +elem.id, (elem.filters?elem.filters.map(f => f.id): []), (elem.transitions?elem.transitions.map(f => f.id): []));
+    space.push(' ');
+
 
     // recurse
     if(elem.name === "producer"){ // if producer
@@ -36,7 +40,9 @@ const processTractor = (mlt) => {
           elem[childsKey][childIndex] = processElement(childProd.producer)
         })
       }
+      delete elem.id
     }
+    space.pop()
     //delete elem.id;
     delete mlt.elements[elemID];
     return elem;
@@ -87,33 +93,44 @@ const compact = (mlt) => {
  
   // processing tractors
   mlt = processTractor(mlt)
-  /*
-  for(let i = mlt.elements.length-1; i > 0; i --){
-    let e = mlt.elements[i];
-    if(e.name === "tractor"){
-      let tractor = e;
-      tractor.tracks.forEach( track => {
-        let {producer, index} = getProducer(mlt, track.producer)
-      })
-    }
-  }
-  */
-
 
   //mlt.elements = mlt.elements.filter( elem => elem !== undefined); // filter empty elements
   return mlt;
 }
 
+
+const generateTractors = (mlt) => {
+
+  let elements = [];
+  let ids = {
+    tractors: 0,
+    playlists: 0,
+    producers: 0
+  }
+
+  const processElement = (elem) => {
+    console.table(elem);
+
+
+    mlt.elements = [...mlt.elements, elem]
+  }
+
+  processElement(mlt.timeline)
+  
+  return mlt;
+}
+
 const extend = (mlt) => {
   if(mlt.elements === undefined) mlt.elements = [];
+
+  mlt = generateTractors(mlt);
+
   let profileElement = {
     "name": "profile",
     "attributes": mlt.profile
   }
   mlt.elements = [profileElement, ...mlt.elements];
-  
-  //mlt = insertElements(mlt, list);
-  
+    
   return mlt;
 }
 

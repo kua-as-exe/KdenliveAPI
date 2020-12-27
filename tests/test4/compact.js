@@ -5,7 +5,7 @@ const processA = require('./processA');
 const processB = require('./processB');
 const processC = require('./processC');
 
-var xml = fs.readFileSync('./../test.bak.kdenlive');
+var xml = fs.readFileSync('./../test.kdenlive');
 var js = convert.xml2js(xml, {spaces: 2});
 var json = JSON.stringify(js, null, 2);
 fs.writeFileSync( './test.kdenlive.nocomprimir.json', json);

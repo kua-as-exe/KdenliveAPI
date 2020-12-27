@@ -6,8 +6,9 @@ const specificElements = {
   transition: 'transitions',
   filter: 'filters'
 }
-
+let space = [''];
 const compact = (e) => {
+  space.push(' ');
   function processSpecificElement(child, index){
     let key = specificElements[child.name];
     delete child.name;
@@ -17,17 +18,21 @@ const compact = (e) => {
   }
   // ---
 
+  console.log(e.name)
   if(e.elements){
     e.elements.forEach( (child, index) =>{
+      console.log(space.join(''), [child.id, child.name], specificElements[child.name])
       if(specificElements[child.name])
         processSpecificElement(child, index);
       else
         e.elements[index] = compact(child);
+      // delete e.elements[index];
     });
     e.elements = e.elements.filter( elem => elem !== undefined); // filter empty elements
     if(e.elements.length == 0) delete e.elements;
   }
-    
+  space.pop(' ');
+
   return e;
 }
 
