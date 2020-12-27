@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <mlt LC_NUMERIC="C" producer="main_bin" version="6.25.0" root="C:/ARREOLA/Media/Cranki220/Videos/19-videomanager">
  <profile frame_rate_num="25" sample_aspect_num="1" display_aspect_den="9" colorspace="709" progressive="1" description="HD 720p 25 fps" display_aspect_num="16" frame_rate_den="1" width="1280" height="720" sample_aspect_den="1"/>
  <producer id="producer0" in="00:00:00.000" out="00:02:46.440">
@@ -57,13 +57,13 @@
   <property name="meta.media.progressive">1</property>
   <property name="kdenlive:zone_in">3778</property>
   <property name="kdenlive:zone_out">4162</property>
-  <property name="kdenlive:clipzones">[&#xd;
-    {&#xd;
-        "in": 3778,&#xd;
-        "name": "Zona: 1",&#xd;
-        "out": 4162&#xd;
-    }&#xd;
-]&#xd;
+  <property name="kdenlive:clipzones">[
+    {
+        "in": 3778,
+        "name": "Zona: 1",
+        "out": 4162
+    }
+]
 </property>
   <property name="kdenlive:audio_max">14</property>
  </producer>

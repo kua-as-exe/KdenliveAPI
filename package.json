@@ -17,7 +17,7 @@
   "scripts": {
     "extend": "ts-node ./src/extend",
     "compact": "ts-node ./src/compact",
-    "test": "ts-node ./tests/test"
+    "test": "ts-node ./tests/test5/test"
   },
   "author": "Jorge Arreola",
   "license": "ISC"
