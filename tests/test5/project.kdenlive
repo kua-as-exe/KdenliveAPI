@@ -1155,15 +1155,6 @@
   <entry producer="producer17" in="00:00:00.000" out="00:03:22.560"/>
   <entry producer="producer18" in="00:00:00.000" out="00:02:18.600"/>
  </playlist>
- <producer id="black_track" in="00:00:00.000" out="00:29:38.720">
-  <property name="length">2147483647</property>
-  <property name="eof">continue</property>
-  <property name="resource">black</property>
-  <property name="aspect_ratio">1</property>
-  <property name="mlt_service">color</property>
-  <property name="mlt_image_format">rgb24a</property>
-  <property name="set.test_audio">0</property>
- </producer>
  <producer id="producer19" in="00:00:00.000" out="00:01:30.560">
   <property name="length">2265</property>
   <property name="eof">pause</property>

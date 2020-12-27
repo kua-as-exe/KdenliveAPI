@@ -1,7 +1,8 @@
-import { Attributes, DeclarationAttributes } from "xml-js";
-import {Element, KdeTypes} from "../KdenliveAPI"
+import { Attributes, DeclarationAttributes, Element } from "xml-js";
+import { KdeTypes} from "../KdenliveAPI"
+import { Properties } from "../types";
 
-export interface KdenliveJSA{
+interface KdenliveJS{
     declaration:{
         attributes: DeclarationAttributes
     }
@@ -13,20 +14,20 @@ interface mlt {
     producer: string | number
     version: string | number
     root: string | number
-    elements: ElementA[]
+    elements: kdeElement[]
 }
 
-interface ElementA{
+interface kdeElement{
     name: string
-    properties?: KdeTypes.Properties
+    properties?: Properties
     attributes?: Attributes
-    elements?: ElementA[]
+    elements?: kdeElement[]
 }
 
 const wrap = {
-    A: (e:Element): ElementA => {
+    A: (e:Element): kdeElement => {
         // the new Element base
-        let E: ElementA = {
+        let E: kdeElement = {
             name: e.name,
         }
         // create the properties key
@@ -51,7 +52,7 @@ const wrap = {
         if(Object.keys(properties).length > 0) E.properties = properties; // clean up
         return E
     },
-    a: (E: ElementA): Element => {
+    a: (E: kdeElement): Element => {
         let elements:Element[] = E.elements?.map(wrap.a) || [];
 
         // move the properties object to child elements
@@ -86,7 +87,7 @@ const wrap = {
     }
 }
 
-const A = (e: Element): KdenliveJSA => {
+const A = (e: Element): KdenliveJS => {
     let attributes = e.declaration.attributes || {}
     const MLTelem = e.elements[0];
     const {LC_NUMERIC, producer, root, version} = MLTelem.attributes
@@ -103,7 +104,7 @@ const A = (e: Element): KdenliveJSA => {
         mlt
     }
 }
-const a = (kde: KdenliveJSA): Element => {
+const a = (kde: KdenliveJS): Element => {
     const {LC_NUMERIC, producer, root, version} = kde.mlt
     let mlt: Element = {
         type: 'element',
@@ -124,3 +125,4 @@ const a = (kde: KdenliveJSA): Element => {
 }
 
 export {A, a}
+export { KdenliveJS, kdeElement, mlt}
