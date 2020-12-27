@@ -12,9 +12,11 @@ writeFileSync(join(path, './project.nocomprimir.json'), JSON.stringify(js, null,
 
 let kdejs = KdenliveAPI.kde2js(js);
 
-writeFileSync(join(path, './project.json'), JSON.stringify(js, null, 2));
+writeFileSync(join(path, './project.json'), JSON.stringify(kdejs, null, 2));
 
 js = KdenliveAPI.js2kde(kdejs);
 
-xml = js2xml(kdejs, {spaces: 1, ignoreComment: true});
+writeFileSync(join(path, './project.back.json'), JSON.stringify(js, null, 2));
+
+xml = js2xml(js, {spaces: 1, ignoreComment: true});
 writeFileSync(join(path, './project.kdenlive'), xml);
